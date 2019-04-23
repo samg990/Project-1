@@ -5,7 +5,7 @@
 ---------------------------------------
 #### //FAMLY App// Fund-A-Mentor-Lift-Youth
 
-FAMLY is a Mentor Crowsourcing App. 
+***FAMLY*** is a Mentor Crowsourcing App. 
 It allows others to financially donate towards activities for Mentors to do with their Mentees. 
 
 As a college student I mentored a high-schooler. Since I was paying for my college tuition, cash was tight for me, and me mentee came from a single-parent low-income home, leaving me to pay for any activities, and ultimately limiting the number of activities or the options of affordable activities. 
