@@ -48,7 +48,7 @@ This non-profit already has a strong foundation and focus on mentorship. It is a
 
 Once we are able to successfully host this client on the app, we can begin to scale, including other non-profits. 
 
-![Screenshot](mentor1@2x.jpg)
+![Screenshot](mentor1@2x.thumb.jpg)
 
 
 
