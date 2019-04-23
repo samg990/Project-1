@@ -20,13 +20,13 @@ Each Mentor has a membership profile, where they can post pictures of their outt
 
 ADDITIONAL FEATURES:
 
--Mentor/Mentee matches can be made through the website by partnering with non-profits in the area with mentorship programs. 
+- Mentor/Mentee matches can be made through the website by partnering with non-profits in the area with mentorship programs. 
 
--Mentor is able to "clock in' and "clock out" hours mentoring. These hours are tracked to reward certain Mentor Status, ie. after 100hrs of Mentoring sessions, your become a Silver Status Mentor. 
+- Mentor is able to "clock in' and "clock out" hours mentoring. These hours are tracked to reward certain Mentor Status, ie. after 100hrs of Mentoring sessions, your become a Silver Status Mentor. 
 
--Charities/Non-profits/other companies are able to advertise their events, specific to the Mentor's profile tags. 
+- Charities/Non-profits/other companies are able to advertise their events, specific to the Mentor's profile tags. 
 
--Corporate Sponsors are able to sponsor Mentors. For each hour clocked for mentoring, a certain amount of money is donated towards FAMLY.
+- Corporate Sponsors are able to sponsor Mentors. For each hour clocked for mentoring, a certain amount of money is donated towards FAMLY.
 
 ---------------------------------------
 
