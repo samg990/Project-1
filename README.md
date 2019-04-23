@@ -1,6 +1,6 @@
 # Project 1: Mentor Crowdsourcing App
 ## JC, Justin, Mo, Sam
-#### UCLA Coding Boot Camp
+#### UCLA Coding Boot Camp 2019
 
 ---------------------------------------
 #### //FAMLY App// Fund-A-Mentor-Lift-Youth
