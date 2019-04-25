@@ -34,16 +34,15 @@ ADDITIONAL FEATURES:
 
 ELEMENTS
 
-+ SOCIAL MEDIA API
-+ PAYMENT API
-+ DATA ANALYTICS API
++ GOOGLE MAPS API
++ PAYMENT API (Paypal, Square, Revv)
 + EVENTBRITE API
 
 ---------------------------------------
 
 #### //FAMLY App// Fund-A-Mentor-Lift-Youth
 
-POTENTIAL CLIENT: “A Place Called Home” (https://apch.org/)
+“A Place Called Home” (https://apch.org/)
 This non-profit already has a strong foundation and focus on mentorship. It is also located in Los Angeles. 
 
 Once we are able to successfully host this client on the app, we can begin to scale, including other non-profits. 
