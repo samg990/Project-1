@@ -1,28 +1,8 @@
+/* TEMPLATE CSS */
 body { 
     background: lightgray !important; 
     max-height: 900px;
 }
-
-.login-page {
-    height: 800px;
-    background-color: lightgray;
-}
-
-.donate-login {
-    margin-top: 100px;
-    border: 5px solid grey;
-    height: 600px;
-    background-color: #0059ff;
-}
-
-.mentor-login {
-    margin-top: 100px;
-    border: 5px solid gray;
-    height: 600px;
-    background-color: #0059ff;
-}
-
-
 
 .template-navbar {
     color: black;
@@ -35,6 +15,7 @@ body {
 }
 
 .template-navbar h1 {
+    letter-spacing: 10px;
     font-size: 50px;
     font-weight: 900;
     margin-bottom: 0px;
@@ -48,10 +29,18 @@ body {
     font-style: italic;
 }
 
+
+/* INTRO PAGE CSS */
+
 .donate-login, .mentor-login {
     padding-top: 10px;
     font-size: 50px;
     font-weight: bolder;
+    margin-top: 100px;
+    border: 5px solid gray;
+    height: 600px;
+    background-color: #0059ff;
+    border-style: groove;
 }
 
 .login-link {
@@ -68,8 +57,7 @@ body {
     background-color: whitesmoke;
     border: 3px solid grey;
     margin-top: -18px;
-    border-style: inset;
-    
+    border-style: inset; 
 }
 
 .signup-button {
@@ -80,5 +68,12 @@ body {
     margin-top: 70px;
     border-radius: 3%;
     text-decoration: underline;
-
 }
+
+
+/* DONORS PAGE CSS */
+
+
+
+
+/* MENTORS PAGE CSS */
