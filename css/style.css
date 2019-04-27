@@ -1,3 +1,8 @@
+body { 
+    background: lightgray !important; 
+    max-height: 900px;
+}
+
 .login-page {
     height: 800px;
     background-color: lightgray;
@@ -17,10 +22,6 @@
     background-color: #0059ff;
 }
 
-.wrapper {
-    background-color: lightgray;
-    margin-bottom: 0px;
-}
 
 
 .template-navbar {
@@ -66,15 +67,18 @@
     padding: 10px;
     background-color: whitesmoke;
     border: 3px solid grey;
+    margin-top: -18px;
+    border-style: inset;
+    
 }
 
 .signup-button {
     font-size: 25px;
-    font-weight: bolder;
-    background-color: gold;
+    font-weight: bold;
+    background-color: rgb(253, 215, 1);
     border: 5px solid black;
     margin-top: 70px;
-    border-radius: 10%;
+    border-radius: 3%;
     text-decoration: underline;
 
 }
