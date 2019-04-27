@@ -77,16 +77,34 @@ font-size: 24px;
 .donation-total p {
     font-size: 20px;
     font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-top: 10px;
+    text-decoration: underline;
 }
 
+.donation-total {
+    border: 1px solid black;
+    border-style: inset;
+}
 #donationTotal {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
-    color: whitesmoke
+    color: whitesmoke;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: -15px;
+
 }
 
 /* Project List */
 
 #project-list {
-    background-color: whitesmoke;
+    height: 800px;
+    margin-top:10px;
+    /* background-color:rgba(236, 236, 236, 0.25); */
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+
 }
+
