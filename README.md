@@ -3,9 +3,9 @@
 #### UCLA Coding Boot Camp 2019
 
 ---------------------------------------
-#### //FAMLY App// Fund-A-Mentor-Lift-Youth
+#### //FMLY App// Fund-Mentors-Lift-Youth
 
-***FAMLY*** is a Mentor Crowsourcing App. 
+***FMLY*** is a Mentor Crowsourcing App. 
 It allows others to financially donate towards activities for Mentors to do with their Mentees. 
 
 As a college student I mentored a high-schooler. Since I was paying for my college tuition, cash was tight for me, and me mentee came from a single-parent low-income home, leaving me to pay for any activities, and ultimately limiting the number of activities or the options of affordable activities. 
@@ -16,7 +16,7 @@ Each Mentor has a membership profile, where they can post pictures of their outt
 
 ---------------------------------------
 
-#### //FAMLY App// Fund-A-Mentor-Lift-Youth
+#### //FMLY App// Fund-Mentors-Lift-Youth
 
 ADDITIONAL FEATURES:
 
@@ -30,7 +30,7 @@ ADDITIONAL FEATURES:
 
 ---------------------------------------
 
-#### //FAMLY App// Fund-A-Mentor-Lift-Youth
+#### //FMLY App// Fund-Mentors-Lift-Youth
 
 ELEMENTS
 
@@ -40,7 +40,7 @@ ELEMENTS
 
 ---------------------------------------
 
-#### //FAMLY App// Fund-A-Mentor-Lift-Youth
+#### //FMLY App// Fund-Mentors-Lift-Youth
 
 We have partnered with a 501(C)3 Non-profit called, “A Place Called Home” (https://apch.org/).
 This non-profit already has a strong foundation and focus on mentorship. It is also located in Los Angeles. 
