@@ -15,7 +15,7 @@ body {
     z-index: -1;   
     width: 100%;
     height: 100%;
-    background-image: url("/images/background/worlddots.jpg");
+    background-image: url("../images/background/worlddots.jpg");
     background-size: cover;
     opacity: 0.10;
     top: 0;
@@ -105,16 +105,16 @@ font-size: 24px;
 }
 
 .donation-total {
-    border-bottom: 1px solid #18aadb79;
-    border-style: inset;
+    border-bottom: 1px inset #18aadb79;
 }
 #donationTotal {
     font-size: 30px;
     font-weight: bolder;
-    color: darkgrey;
+    color: #18aadb;
     padding: 0px;
-    margin-top: -15px;
-
+    margin-top: -5px;
+    padding-bottom: 5px;
+    text-decoration: none;
 }
 
 /* Project List */
