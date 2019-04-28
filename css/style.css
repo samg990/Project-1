@@ -1,74 +1,210 @@
 /* TEMPLATE CSS */
 
-body { 
-    background: lightgray !important; 
-    max-height: 900px;
+body {
+  background: white;
+  max-height: 900px;
 }
 
 .template-navbar {
-    color: black;
-    background-color: #0059ff;
-    border-bottom: 5px solid grey;
-    height: 90px;
-    width: auto;
-    margin-right: 0px;
-    margin-left: 0px;
+  color: black;
+  background-color: #0059ff;
+  border-bottom: 5px solid grey;
+  height: 90px;
+  width: auto;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .template-navbar h1 {
-    letter-spacing: 10px;
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 0px;
-    color: whitesmoke;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  color: whitesmoke;
 }
 
 .template-navbar h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 0px;
-    font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  font-style: italic;
 }
-
 
 /* INTRO PAGE CSS */
 
-.donate-login, .mentor-login {
-    padding-top: 10px;
-    font-size: 50px;
-    font-weight: bolder;
-    margin-top: 100px;
-    border: 5px solid gray;
-    height: 600px;
-    background-color: #0059ff;
-    border-style: groove;
+.donate-login,
+.mentor-login {
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 100px;
+  border: 5px solid gray;
+  height: 600px;
+  background-color: #0059ff;
+  border-style: groove;
 }
 
 .login-link {
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: bolder;
-    padding-top: 20px;
-    text-decoration: underline;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bolder;
+  padding-top: 20px;
+  text-decoration: underline;
 }
 
-.donate-click, .mentor-click {
-    border-radius: 50%;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 3px solid grey;
-    margin-top: -18px;
-    border-style: inset; 
+.donate-click,
+.mentor-click {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 3px solid grey;
+  margin-top: -18px;
+  border-style: inset;
 }
 
 .signup-button {
-    font-size: 25px;
-    font-weight: bold;
-    background-color: rgb(253, 215, 1);
-    border: 5px solid black;
-    margin-top: 70px;
-    border-radius: 3%;
-    text-decoration: underline;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(253, 215, 1);
+  border: 5px solid black;
+  margin-top: 70px;
+  border-radius: 3%;
+  text-decoration: underline;
 }
 
+.navbar {
+  background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
+  font-size: 23px;
+}
 
+#introJumb {
+  text-align: center;
+  color: aliceblue;
+  background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
+}
+
+.card-deck {
+  text-align: center;
+  border: solid, #bfbe7e;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff0101;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
