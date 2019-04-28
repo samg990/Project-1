@@ -112,8 +112,30 @@ input[type="password"]:focus {
 }
 
 /* Set a style for all buttons */
+.loginBtn {
+  background-color: #0082ce;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signBtn {
+  background-color: #9c8d00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
 button {
-  background-color: #4caf50;
+  background-color: #0082ce;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -124,7 +146,7 @@ button {
 }
 
 button:hover {
-  opacity: 1;
+  opacity: 3;
 }
 
 /* Extra styles for the cancel button */
