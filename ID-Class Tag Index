@@ -1,22 +1,23 @@
-# LOGIN PAGE
+------------------------------------------------------------------
+LOGIN PAGE
 
 
-### Classes
-
-
-
-
-
-### IDs
+//Classes//
 
 
 
 
 
+//IDs//
 
-# DONOR PAGE
 
-### Classes
+
+
+
+------------------------------------------------------------------
+DONOR PAGE
+
+//Classes//
 
 .age-filter (on click hides or shows filter options)
 .goal-amount-filter (on click hides or shows filter options)
@@ -28,7 +29,7 @@
 
 
 
-### IDs
+//IDs//
 
 #nonprofit-dd-filter (dropdown menu of registerd non-profits. javascript here. loop through array of non-profits and add li to UL)
 
@@ -41,17 +42,15 @@
 
 
 
+------------------------------------------------------------------
+MENTOR PAGE
 
-# MENTOR PAGE
-
-### Classes
+//Classes//
 
 .profile-picture
 
 
-
-
-### IDs
+//IDs//
 
 #profilePicture
 #addPostButton
@@ -61,6 +60,17 @@
 
 #feed-input (Javascript. This is where the POSTS are appended)
 #status-input (Javascript. This is where the PROJECT STATUS charts are appended)
+
+------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+
+
+------------------------------------------------------------------
 
 
 
