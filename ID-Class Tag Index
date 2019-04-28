@@ -1,0 +1,71 @@
+#### LOGIN PAGE
+
+
+### Classes
+
+
+
+
+
+### IDs
+
+
+
+
+
+
+#### DONOR PAGE
+
+### Classes
+
+.age-filter (on click hides or shows filter options)
+.goal-amount-filter (on click hides or shows filter options)
+.location-filter (on click hides or shows filter options)
+.activity-desc-filter (on click hides or shows filter options)
+.nonprofit-filter (on click hides or shows filter options)
+.mentor-search (search field to filter mentor activity cards by mentor)
+
+
+
+
+### IDs
+
+#nonprofit-dd-filter (dropdown menu of registerd non-profits. javascript here. loop through array of non-profits and add li to UL)
+
+#project-list (Javascript. This is where the mentor projects to choose from appear)
+#donationCartItems (Javascript. This is where the cart items go)
+#donationTotal (Javascript. This is where the Cart total diplays)
+
+
+
+
+
+
+
+#### MENTOR PAGE
+
+### Classes
+
+.profile-picture
+
+
+
+
+### IDs
+
+#profilePicture
+#addPostButton
+#editProfileButton
+#addPhotoButton
+#postNewActButton
+
+#feed-input (Javascript. This is where the POSTS are appended)
+#status-input (Javascript. This is where the PROJECT STATUS charts are appended)
+
+
+
+
+
+
+
+
