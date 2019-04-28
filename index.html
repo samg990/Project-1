@@ -19,9 +19,52 @@
 
 <body>
 
+    <style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 200px;  /* The height is 400 pixels */
+         width: 30%;  /* The width is the width of the web page */
+        }
+     </style>
+   </head>
+   <body>
+     <h3>Stop by & say "hi"</h3>
+     <!--The div element for the map -->
+     <div id="map"></div>
+     <div id="addressInfo">2830 S. Central Ave. Los Angeles, CA 90011</div>
+     <script>
+ // Initialize and add the map
+ function initMap() {
+   // The location of Uluru
+   var APCH = {lat: 34.015799, lng:-118.255796};
+   // The map, centered at Uluru
+   var map = new google.maps.Map(
+       document.getElementById('map'), {zoom: 15, center: APCH});
+   // The marker, positioned at Uluru
+   var marker = new google.maps.Marker({position: APCH, map: map});
+ }
+     </script>
+     <!--Load the API from the specified URL
+     * The async attribute allows the browser to render the page while the API loads
+     * The key parameter will contain your own API key (which is not needed for this tutorial)
+     * The callback parameter executes the initMap() function
+     -->
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXCTI1ROuoyeMpzgJidzqdtnkyAlI5dw4&callback=initMap">
+     </script>
+
+<!--NEED TO UPDATE TO CLIENTS GOOGLE MAPS API KEY  -->
+    <!-- Google maps API Key AIzaSyBXCTI1ROuoyeMpzgJidzqdtnkyAlI5dw4 -->
 
 
 
+
+     <div id="contactInfo"><h4>Or drop us a note</h4></div>
+     <div id="contactInfo">	info@apch.org </div>
+   
+
+<!-- Since we've not decided what function or information we want to retrieve or exchange the simple embedded map could work -->
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.7736215089934!2d-118.25616836755432!3d34.01578554334341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c87cfc084615%3A0xfa775d6e1509b9e9!2sA+Place+Called+Home!5e0!3m2!1sen!2sus!4v1556396044426!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 </body>
 
