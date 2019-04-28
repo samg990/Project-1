@@ -1,13 +1,32 @@
 /* TEMPLATE CSS */
 
 body { 
-    background: lightgray !important; 
+    background: hsl(0, 0%, 83%, .25) !important; 
     max-height: 900px;
 }
 
+.wrapper {
+    margin-right:5px;
+    margin-left: 5px;
+}
+
+.hero-unit_background-image {
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/background/worlddots.jpg");
+    background-size: cover;
+    opacity: 0.10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
 .template-navbar {
     color: black;
-    background-color: #0059ff;
+    background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
     border-bottom: 5px solid grey;
     height: 90px;
     width: auto;
@@ -27,7 +46,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin-top: 0px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /* DONORS PAGE CSS */
@@ -37,33 +56,35 @@ body {
     /* font-size: 50px; */
     /* font-weight: bolder; */
     margin-top: 10px;
-    border: 5px solid gray;
+    border-top: 1px solid #bfbe7e9f;
+    border-bottom: 1px solid #bfbe7e9f;
     height: 550px;
-    background-color: #0059ff;
-    border-style: groove;
 }
 
 .filter h3 {
     font-size: 15px;
+    margin-left: 40px;
 }
 
 .filter li {
     font-size: 10px;
+    margin-left: 40px;
+
 }
 
 .mentor-search {
     font-size: 10px;
     border: 1px solid black;
+    margin-left: 40px;
+
 }
 
 /* Donation Cart Box */
 
 .donation-cart {
     margin-top: 10px;
-    border: 5px solid gray;
+    border-top: 1px solid #18aadb79;
     height: 550px;
-    background-color: #0059ff;
-    border-style: groove;
 }
 
 .donation-cart h3{
@@ -84,15 +105,14 @@ font-size: 24px;
 }
 
 .donation-total {
-    border: 1px solid black;
+    border-bottom: 1px solid #18aadb79;
     border-style: inset;
 }
 #donationTotal {
     font-size: 30px;
     font-weight: bolder;
-    color: whitesmoke;
+    color: darkgrey;
     padding: 0px;
-    margin-bottom: 0px;
     margin-top: -15px;
 
 }
@@ -100,11 +120,11 @@ font-size: 24px;
 /* Project List */
 
 #project-list {
-    height: 800px;
+    height: 600px;
     margin-top:10px;
     /* background-color:rgba(236, 236, 236, 0.25); */
-    border-right: 2px solid whitesmoke;
-    border-left: 2px solid whitesmoke;
+    border-right: 2px solid #18aadb49;
+    border-left: 2px solid #bfbe7e9f;
 
 }
 
