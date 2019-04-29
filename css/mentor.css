@@ -150,3 +150,50 @@ body {
         color: #bfbe7e;
     }
     
+    /* DONOR PG MEDIA QUERIES */
+
+    @media screen and (max-width: 1200px) {
+        #addPostButton, #editProfileButton, #addPhotoButton {
+            width: 90px;
+            height: 30px;
+            margin-left: 1px;
+            border-right: 1px solid #bfbe7e;
+            border-left: 1px solid #bfbe7e;
+            background-color: rgba(211, 211, 211, 0.1);
+            margin-top: 50px;
+            font-size:10px;
+        }
+        .wrapper {
+            margin-right:0px;
+            margin-left:0px;
+        }
+
+        #postNewActButton h6 {
+            font-size: 10px;
+            margin-left: -5px;
+            margin-bottom: -2px;
+        }
+        .post-new {
+            border: 1px solid #bfbe7e;
+            width: 90px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            padding: 2px;
+            background-color: whitesmoke;
+            border: 1px solid grey;
+            margin-top: 10px;
+            margin-left: -50px;
+            border-style: inset; 
+            z-index: 2;
+            position: absolute;
+            float: inherit;
+            overflow: auto;
+            width: 100px;
+            height: 100px;
+        }
+        #mentor-name {
+            font-size: 40px;
+        }
+    }

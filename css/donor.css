@@ -5,6 +5,7 @@ body {
     max-height: 900px;
 }
 
+
 .wrapper {
     margin-right:5px;
     margin-left: 5px;
@@ -72,7 +73,7 @@ body {
 
 }
 
-.mentor-search {
+.mentor-search, .nonprofit-search {
     font-size: 10px;
     border: 1px solid black;
     margin-left: 40px;
@@ -88,7 +89,7 @@ body {
 }
 
 .donation-cart h3{
-font-size: 24px;
+    font-size: 24px;
 }
 
 .donation-cart-list {
@@ -127,4 +128,68 @@ font-size: 24px;
     border-left: 2px solid #bfbe7e9f;
 
 }
+
+/* Donor Media Queries */
+/* GOAL IS TO MAKE THE FILTER DISAPEAR AND HAVE THE FEED SPAN COL-11 */
+/* SMALLEST SIZE SHOULD HAVE FEED SPAN COL-12 AND DONATION BELOW */
+/* 705px smallest with all columns */
+@media screen and (max-width: 1000px) {
+.filter h3, .filter li, .mentor-search, .nonprofit-search  {
+    margin-left: 1px;
+}
+.mentor-search, .nonprofit-search {
+    width: 100px;
+}
+
+.donation-total p {
+    font-size: 12px;
+}
+#donationCartItems {
+    font-size: 10px;
+}
+#donationTotal {
+    font-size:20px;
+}
+.wrapper {
+    margin-right:0px;
+    margin-left:0px;
+}
+.donation-cart h3 {
+    font-size: 20px;
+}
+}
+
+
+
+/* @media screen and (max-width: 800px) {
+    
+}} */
+
+/* @media screen and (max-width: 800px) {
+    .filter-box  {
+        
+}
+    .donation-cart  {
+        
+}
+    .project-list  {
+
+    }} */
+
+/* }
+@media screen and (max-width: 800px) {
+    
+}} */
+
+
+/*
+@media screen and (max-width: 750px) {
+    .filter-box  {
+    display: none;    
+}}
+
+@media screen and (max-width: 750px) {
+    .project-list  {
+        width: 90%;
+}} */
 
