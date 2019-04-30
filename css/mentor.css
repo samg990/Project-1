@@ -1,13 +1,37 @@
 /* TEMPLATE CSS */
 
 body { 
-    background: whitesmoke !important; 
+    /* background: hsl(0, 0%, 83%, .5) !important;  */
+    /* background-image: url("/images/background/worlddots.jpg");
+    opacity: 10%; */
+    
+    /* background-blend-mode: color; */
+
     max-height: 900px;
+}
+
+.hero-unit_background-image {
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background/worlddots.jpg");
+    background-size: cover;
+    opacity: 0.30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+.wrapper {
+    margin-right:5px;
+    margin-left: 5px;
 }
 
 .template-navbar {
     color: black;
-    background-color: #0059ff;
+    background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
     border-bottom: 5px solid grey;
     height: 90px;
     width: auto;
@@ -21,13 +45,14 @@ body {
     font-weight: 900;
     margin-bottom: 0px;
     color: whitesmoke;
+    
 }
 
 .template-navbar h2 {
     font-size: 20px;
     font-weight: 700;
     margin-top: 0px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /* MENTORS PAGE CSS */
@@ -42,35 +67,35 @@ body {
         padding: 10px;
         background-color: whitesmoke;
         border: 3px solid grey;
-        margin-top: -18px;
+        margin-top: -60px;
         border-style: inset; 
         z-index: 2;
         position: absolute;
-        top: 50px;
-        left:200px;
+        float: inherit;
         overflow: auto;
+
     }
 
-#mentor-act-tabs {
+    #mentor-act-tabs {
     padding-top: 10px;
     font-size: 50px;
     font-weight: bolder;
     margin-top: 10px;
-    border: 5px solid gray;
+    border-top: 1px solid #bfbe7e;
+    border-right: 1px solid #bfbe7e;
     height: 600px;
-    background-color: lightgrey;
-    border-style: groove;
-    }
+    /* background-color:rgba(216, 216, 216, 0.5); */
+}
     
     #project-status {
         padding-top: 10px;
         font-size: 50px;
         font-weight: bolder;
         margin-top: 10px;
-        border: 5px solid gray;
+        border-top: 1px solid rgba(0, 168, 219, 0.6);
+        border-left: 1px solid rgba(0, 168, 219, 0.6);        
         height: 600px;
-        background-color: lightgrey;
-        border-style: groove;
+        /* background-color:rgba(216, 216, 216, 0.5); */
     }
     
     #mentor-feed {
@@ -78,21 +103,97 @@ body {
         margin-top: 10px;
     } 
     
-    #feed-input {
+    #mentor-feed {
         background-color:rgba(216, 216, 216, 0.5);
         height: 600px;
     }
+
+    #mentor-name {
+        font-size: 60px;
+        font-weight: 900;
+        font-style: oblique;
+    }
     
     .tab-section {
-        margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    
     }
 
     .mentor-button {
-        width: 150px;
+        width: 175px;
         height: 40px;
+        border-right: 3px solid #bfbe7e;
+        border-left: 3px solid #bfbe7e;
+        background-color: rgba(211, 211, 211, 0.1);
+        margin-top: 50px;
+        color: black;
+        font-weight: bolder;
+
+    }
+  
+
+    .post-new {
+        margin-top: 60px;
+        border: 5px solid #bfbe7e;
+        background-color: rgba(211, 211, 211, .1);
     }
 
-    .add-act-button {
-        margin-top: 60px;
+    button:hover {
+        box-shadow: 0 12px 16px 0 rgb(24, 171, 220, .2),0 17px 50px 0 rgba(191, 189, 125, 0.9);
+    }
+
+    .add-act-button h6{
+        font-weight: bolder;
+        font-size: 20px;
+        color: #bfbe7e;
+    }
+    
+    /* DONOR PG MEDIA QUERIES */
+
+    @media screen and (max-width: 1200px) {
+        #addPostButton, #editProfileButton, #addPhotoButton {
+            width: 90px;
+            height: 30px;
+            margin-left: 1px;
+            border-right: 1px solid #bfbe7e;
+            border-left: 1px solid #bfbe7e;
+            background-color: rgba(211, 211, 211, 0.1);
+            margin-top: 50px;
+            font-size:10px;
+        }
+        .wrapper {
+            margin-right:0px;
+            margin-left:0px;
+        }
+
+        #postNewActButton h6 {
+            font-size: 10px;
+            margin-left: -5px;
+            margin-bottom: -2px;
+        }
+        .post-new {
+            border: 1px solid #bfbe7e;
+            width: 90px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            padding: 2px;
+            background-color: whitesmoke;
+            border: 1px solid grey;
+            margin-top: 10px;
+            margin-left: -50px;
+            border-style: inset; 
+            z-index: 2;
+            position: absolute;
+            float: inherit;
+            overflow: auto;
+            width: 100px;
+            height: 100px;
+        }
+        #mentor-name {
+            font-size: 40px;
+        }
     }
