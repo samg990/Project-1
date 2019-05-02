@@ -29,6 +29,10 @@ body {
   margin-right: 0px;
   margin-left: 0px;
 }
+.jumbotron h1 {
+  letter-spacing: 30px;
+}
+
 
 .template-navbar h1 {
   letter-spacing: 10px;
@@ -47,6 +51,10 @@ body {
 
 .donorSubTitle {
   margin-bottom: 35px;
+}
+
+.mentorSubTitle {
+margin-top: -12px;
 }
 
 
@@ -98,9 +106,10 @@ body {
     0 17px 50px 0 rgba(191, 189, 125, 0.9);
 } */
 
-/* #donor1 {
-
-}
+/* #donor1 img{
+margin-top: 50px;
+} */
+/*
 #mentor1 {
 
 }  */
@@ -110,6 +119,10 @@ body {
 button:hover {
   box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
     0 17px 50px 0 rgba(191, 189, 125, 0.5);
+}
+  
+img:hover {
+  zoom: 105%; 
 }
 
 a.donateBtn:hover {

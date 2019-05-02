@@ -99,170 +99,213 @@
                         </div>
                     </div>
                 </div>
-                <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
-
-  <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
-  <div class="project-group">
-    <div style="width: 12rem; border:1px green; margin:3%;" class="card">
-      <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Entertainment</h5>
-        <p class="card-text">Celebrity Basketball Game...</p>
-      </div>
-      <div class="card-footer">
-            <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Mentor</a>
-            <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Donate</a>
-            <br>
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-
-      
-<!-- Form to generate new projects -->
-
-<!-- Button to open the new project modal -->
-<button type="button" class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Create New Project</button>
-
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">FMLY</span>
-<form class="modal-content" action="/action_page.php">
-
-
-
-<!--  -->
-
-<section class="testimonial py-5" id="testimonial">
-<div class="container">
-<div class="row ">
-<div class="col-md-4 py-5 bg-primary text-white text-center ">
-<div class=" ">
-    <div class="card-body">
-        <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
-        <h2 class="py-3">New Project</h2>
-        <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.
-
-</p>
-    </div>
-</div>
-</div>
-<div class="col-md-8 py-5 border">
-<h4 class="pb-4">Please fill with project details</h4>
-<form>
-    <div class="form-row">
-        <div class="form-group col-md-6">
-          <input id="nameInput" name="Project Name" placeholder="Project Name" class="form-control" type="text">
-        </div>
-        <div class="form-group col-md-6">
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Mentor Email">
-        </div>
-      </div>
-    <div class="form-row">    
-        <div class="form-group col-md-6">
-                <select id="inputEducation" class="form-control">
-                        <option selected>Choose Education Level...</option>
-                        <option>Elementary School</option>
-                        <option>Middle School</option>
-                        <option>High School</option>
-                        <option>College</option>
-                      </select>
-        </div>
-        <div class="form-group col-md-6">
-                  
-                  <select id="inputLocation" class="form-control">
-                    <option selected>Choose Location ...</option>
-                    <option>Los Angeles</option>
-                    <option>Orange County</option>
-                    <option>Ventura County</option>
-                    <option> Inland Empire</option>
-                  </select>
-
-
-        <div class="form-group col-md-12"></div>
-                  <!-- <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea> -->
-        </div>
-
-        
-        <div class="form-row">    
-                <div class="form-group col-md-6">
-                        <select id="inputActivity" class="form-control">
-                                <option selected>Choose Activities...</option>
-                                <option>DIY Projects</option>
-                                <option>Entertainment</option>
-                                <option>Education</option>
-                                <option>Volunteer</option>
-                              </select>
-                </div>
-
-
-                <div class="form-group col-md-6">
-                          
-                          <select id="inputRange" class="form-control">
-                            <option selected>Choose $ Range ...</option>
-                            <option>$1 - $10</option>
-                            <option>$10 - $50</option>
-                            <option>$50 - $100</option>
-                            <option>$100+</option>
-                          </select>
-                        </div>
-
-                        <div class="form-row"> 
-
-                                <div style: class="form-group col-md-12">Project Details</div>
-                                <textarea id="projectDetails" name="comment" cols="40" rows="5" class="form-control"></textarea>
-                      </div>
-
-    <div class="form-row">
-        <div class="form-group">
-            <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                  <label class="form-check-label" for="invalidCheck2">
-                    <small>By clicking Submit, you agree to our Terms & Conditions, Visitor Agreement and Privacy Policy.</small>
-                  </label>
-                </div>
-              </div>
-    
-          </div>
-    </div>
-
-</div>
-    
-    <div class="form-row">
-        <button type="button" id="submitProject" class="btn btn-danger">Submit</button>
-    </div>
-</form>
-
-</div>
-</div>
-</div>
-</section>
-<!--  -->
-<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-<div class="clearfix">
-<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-<button type="submit" class="signup">Sign Up</button>
-</div>
-</div>
-</form>
-</div>
-
-<!--------------------- end of form ------------------------------------>
-
-
-
-
-
-
-
-                <!-- --------------------- END OF FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
 
                 <div class="col-8 projectlist">
 
                     <div id="project-list">
                         <!-- Javascript. This is where the mentor projects to choose from appear -->
+
+                        <div class="container projectListInput">
+                            <!--Stores JC Code In Middle Section-->
+                            <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
+
+                            <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
+                            <div class="project-group">
+                                <div style="width: 12rem; border:1px green; margin:3%;" class="card">
+                                    <img class="card-img-top"
+                                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Entertainment</h5>
+                                        <p class="card-text">Celebrity Basketball Game...</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Mentor</a>
+                                        <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Donate</a>
+                                        <br>
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+
+
+                                <!-- Form to generate new projects -->
+
+                                <!-- Button to open the new project modal -->
+                                <button type="button" class="btn btn-primary"
+                                    onclick="document.getElementById('id01').style.display='block'">Create New
+                                    Project</button>
+
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">FMLY</span>
+                                    <form class="modal-content" action="/action_page.php">
+
+
+
+                                        <!--  -->
+
+                                        <section class="testimonial py-5" id="testimonial">
+                                            <div class="container">
+                                                <div class="row ">
+                                                    <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                                                        <div class=" ">
+                                                            <div class="card-body">
+                                                                <img src="http://www.ansonika.com/mavia/img/registration_bg.svg"
+                                                                    style="width:30%">
+                                                                <h2 class="py-3">New Project</h2>
+                                                                <p>Tation argumentum et usu, dicit viderer evertitur te
+                                                                    has. Eu
+                                                                    dictas concludaturque usu, facete detracto patrioque
+                                                                    an per,
+                                                                    lucilius pertinacia eu vel.
+
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 py-5 border">
+                                                        <h4 class="pb-4">Please fill with project details</h4>
+                                                        <form>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <input id="nameInput" name="Project Name"
+                                                                        placeholder="Project Name" class="form-control"
+                                                                        type="text">
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <input type="email" class="form-control"
+                                                                        id="inputEmail4" placeholder="Mentor Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <select id="inputEducation" class="form-control">
+                                                                        <option selected>Choose Education Level...
+                                                                        </option>
+                                                                        <option>Elementary School</option>
+                                                                        <option>Middle School</option>
+                                                                        <option>High School</option>
+                                                                        <option>College</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+
+                                                                    <select id="inputLocation" class="form-control">
+                                                                        <option selected>Choose Location ...</option>
+                                                                        <option>Los Angeles</option>
+                                                                        <option>Orange County</option>
+                                                                        <option>Ventura County</option>
+                                                                        <option> Inland Empire</option>
+                                                                    </select>
+
+
+                                                                    <div class="form-group col-md-12"></div>
+                                                                    <!-- <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea> -->
+                                                                </div>
+
+
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <select id="inputActivity" class="form-control">
+                                                                            <option selected>Choose Activities...
+                                                                            </option>
+                                                                            <option>DIY Projects</option>
+                                                                            <option>Entertainment</option>
+                                                                            <option>Education</option>
+                                                                            <option>Volunteer</option>
+                                                                        </select>
+                                                                    </div>
+
+
+                                                                    <div class="form-group col-md-6">
+
+                                                                        <select id="inputRange" class="form-control">
+                                                                            <option selected>Choose $ Range ...</option>
+                                                                            <option>$1 - $10</option>
+                                                                            <option>$10 - $50</option>
+                                                                            <option>$50 - $100</option>
+                                                                            <option>$100+</option>
+                                                                        </select>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+
+                                                                        <div style: class="form-group col-md-12">Project
+                                                                            Details
+                                                                        </div>
+                                                                        <textarea id="projectDetails" name="comment"
+                                                                            cols="40" rows="5"
+                                                                            class="form-control"></textarea>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group">
+                                                                            <div class="form-group">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="invalidCheck2" required>
+                                                                                    <label class="form-check-label"
+                                                                                        for="invalidCheck2">
+                                                                                        <small>By clicking Submit, you
+                                                                                            agree to our
+                                                                                            Terms & Conditions, Visitor
+                                                                                            Agreement
+                                                                                            and Privacy Policy.</small>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row">
+                                                                    <button type="button" id="submitProject"
+                                                                        class="btn btn-danger">Submit</button>
+                                                                </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!--  -->
+                                        <p>By creating an account you agree to our <a href="#"
+                                                style="color:dodgerblue">Terms &
+                                                Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button"
+                                                onclick="document.getElementById('id01').style.display='none'"
+                                                class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signup">Sign Up</button>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+
+                            <!--------------------- end of form ------------------------------------>
+
+
+
+
+
+
+
+                            <!-- --------------------- END OF FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
+
+                        </div>
+
+
+
+
                     </div>
+
+
+
                 </div>
 
                 <div class="col-2 donation-cart ">
@@ -283,12 +326,13 @@
             </div>
         </div>
 
-<div type="container">
+        <div type="container">
 
-    <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFUYI_HzIwoAR6bkJFW5dd_o&key=..." allowfullscreen></iframe>
+            <iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFUYI_HzIwoAR6bkJFW5dd_o&key=..."
+                allowfullscreen></iframe>
 
-</div>
+        </div>
 
 
 </body>
