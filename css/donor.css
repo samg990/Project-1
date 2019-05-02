@@ -1,7 +1,7 @@
 /* TEMPLATE CSS */
 
 body { 
-    background: hsl(0, 0%, 83%, .25) !important; 
+    background: rgb(255, 255, 255) !important; 
     max-height: 900px;
 }
 

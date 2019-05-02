@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/mentor.css">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- Server -->
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
@@ -26,7 +26,11 @@
     <nav class="template-navbar text-center">
         <h1>FMLY</h1>
         <h2>Fund Mentors Lift Youth</h2>
-
+        <div class="text-center">
+            <button class="btn btn-outline " id="logout-button">
+                <h6>LOGOUT</h6>
+            </button>
+        </div>
     </nav>
 
 
@@ -58,11 +62,7 @@
                             <h6>POST<br>NEW ACTIVITY</h6>
                         </button>
                     </div>
-                    <div class="text-center">
-                        <button class="btn btn-outline " id="logout-button">
-                            <h6>LOGOUT</h6>
-                        </button>
-                    </div>
+
                 </div>
 
                 <div class="col-7" id="mentor-feed">
@@ -84,7 +84,7 @@
         </div>
 
 </body>
-       <!-- JavaScript -->
-    <script src="JavaScript/logout.js"></script>
+<!-- JavaScript -->
+<script src="JavaScript/logout.js"></script>
 
 </html>
