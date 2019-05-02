@@ -57,8 +57,8 @@ body {
     /* font-size: 50px; */
     /* font-weight: bolder; */
     margin-top: 10px;
-    border-top: 1px solid #bfbe7e9f;
-    border-bottom: 1px solid #bfbe7e9f;
+    /* border-top: 1px solid #bfbe7e9f; */
+    /* border-bottom: 1px solid #bfbe7e9f; */
     height: 550px;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .donation-cart {
     margin-top: 10px;
-    border-top: 1px solid #18aadb79;
+    /* border-top: 1px solid #18aadb79; */
     height: 550px;
 }
 
@@ -105,9 +105,9 @@ body {
     text-decoration: underline;
 }
 
-.donation-total {
+/* .donation-total {
     border-bottom: 1px inset #18aadb79;
-}
+} */
 #donationTotal {
     font-size: 30px;
     font-weight: bolder;

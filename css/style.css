@@ -13,7 +13,7 @@ body {
   height: 100%;
   background-image: url("../images/background/worlddots.jpg");
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -45,9 +45,15 @@ body {
   /* font-style: italic; */
 }
 
+.donorSubTitle {
+  margin-bottom: 35px;
+}
+
+
+
 /* INTRO PAGE CSS */
 
-.donate-login,
+/* .donate-login,
 .mentor-login {
   padding-top: 10px;
   font-size: 50px;
@@ -85,17 +91,39 @@ body {
   margin-top: 70px;
   border-radius: 3%;
   text-decoration: underline;
-}
+} */
 
-button:hover {
+/* button:hover {
   box-shadow: 0 12px 16px 0 rgb(24, 171, 220, 0.2),
     0 17px 50px 0 rgba(191, 189, 125, 0.9);
+} */
+
+/* #donor1 {
+
+}
+#mentor1 {
+
+}  */
+
+
+
+
+
+button:hover {
+  box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
+    0 17px 50px 0 rgba(191, 189, 125, 0.5);
 }
 
-img:hover {
-  box-shadow: 0 100px 100px 0 rgb(24, 171, 220, 0.9),
-    0 17px 50px 0 rgba(191, 189, 125, 0.2);
-}
+a:hover 
+{
+     text-decoration:none; 
+     color: white;
+     background-color: #9AB897;
+     cursor:pointer; 
+     box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
+     0 17px 50px 0 rgba(191, 189, 125, 0.5); 
+     border: 3px solid black;
+} 
 
 .template-navbar {
   color: black;
@@ -122,9 +150,23 @@ img:hover {
   font-style: italic;
 }
 
+.hero-unit_background-image {
+  position: absolute;
+  z-index: -1;   
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background/worlddots.jpg");
+  background-size: cover;
+  opacity: 0.10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 /* INTRO PAGE CSS */
 
-.donate-login,
+/* .donate-login,
 .mentor-login {
   padding-top: 10px;
   font-size: 50px;
@@ -162,7 +204,7 @@ img:hover {
   margin-top: 70px;
   border-radius: 3%;
   text-decoration: underline;
-}
+} */
 
 .navbar {
   background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
@@ -173,12 +215,28 @@ img:hover {
   text-align: center;
   color: aliceblue;
   background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
+  height: 300px;
+  /* opacity: ; */
 }
 
 .card-deck {
   text-align: center;
   border: solid, #bfbe7e;
 }
+
+.card-text {
+  font-size: 30px;
+  font-weight: 900;
+  color: #4BB0C8;
+  text-shadow: 1px 1px 0 #000;
+}
+
+
+.donorSubTitle {
+  color: #9AB897;
+}
+
+
 
 .card-img-top {
   width: 100%;
@@ -205,40 +263,56 @@ input[type="password"]:focus {
 
 /* Set a style for all buttons */
 .loginBtn {
-  background-color: #0082ce;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
+  padding: 14px 35px;
+  margin: 8px 50px;
+  margin-left: 0px;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  border: 3px solid black;
+  font-weight: bolder;
+
 }
 
 .signBtn {
-  background-color: #9c8d00;
+  background-color: #48AEC9;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  border: 3px solid black;
+  font-weight: bolder;
 }
 
-button {
-  background-color: #0082ce;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+
+.donateBtn {
+  background-color: white;
+  color: #9AB897;
+  font-weight: bolder;
+  border: 3px solid #9AB897;
+  padding: 14px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  }
+
+
+  .loginBtn {
+    background-color: #4BB0C8;
+  }
+  .signBtn {
+    background-color: #4BB0C8
+  }
+
+
+#introJumb h1 {
+  font-size: 100px;
+  font-weight: 900;
 }
 
-button:hover {
-  opacity: 3;
+#introJumb p {
+font-weight: 600;
 }
 
 /* Extra styles for the cancel button */
