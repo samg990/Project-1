@@ -81,7 +81,6 @@ body {
     font-size: 50px;
     font-weight: bolder;
     margin-top: 10px;
-    border-top: 1px solid #bfbe7e;
     border-right: 1px solid #bfbe7e;
     height: 600px;
     /* background-color:rgba(216, 216, 216, 0.5); */
@@ -92,7 +91,6 @@ body {
         font-size: 50px;
         font-weight: bolder;
         margin-top: 10px;
-        border-top: 1px solid rgba(0, 168, 219, 0.6);
         border-left: 1px solid rgba(0, 168, 219, 0.6);        
         height: 600px;
         /* background-color:rgba(216, 216, 216, 0.5); */
