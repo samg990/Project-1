@@ -107,22 +107,30 @@ body {
 
 
 
-
-
 button:hover {
   box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
     0 17px 50px 0 rgba(191, 189, 125, 0.5);
+}
+
+a.donateBtn:hover {
+  text-decoration:none; 
+  color: white;
+  background-color: #9AB897;
+  cursor:pointer; 
+ box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
+  0 17px 50px 0 rgba(191, 189, 125, 0.5);
+  border: 3px solid black;
 }
 
 a:hover 
 {
      text-decoration:none; 
      color: white;
-     background-color: #9AB897;
      cursor:pointer; 
-     box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
-     0 17px 50px 0 rgba(191, 189, 125, 0.5); 
-     border: 3px solid black;
+    box-shadow: 0 5px 5px 0 rgb(24, 171, 220, 0.2),
+     0 17px 50px 0 rgba(191, 189, 125, 0.5);
+     font-weight: 900;
+     
 } 
 
 .template-navbar {
