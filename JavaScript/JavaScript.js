@@ -42,7 +42,7 @@ $(document).ready(function () {
   auth.onAuthStateChanged(User => {
 
     if (User){
-      // window.location = 'mentorpg.html';
+      window.location = 'mentorpg.html';
       console.log(User)
     } 
     else {
