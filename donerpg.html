@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FMLY - DONOR PAGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Doner Page CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/donor.css">
-    <!-- <script src="main.js"></script> -->
+    <!-- Javascript for Filter Functionality -->
+    <script src="JavaScript/filter.js"></script>
 </head>
 
 <body>
@@ -32,64 +40,70 @@
             <div class="row ">
 
                 <!-- Filter Through Activities -->
-                <div class="col-2 filter-box ">
+                <div class="col-2" id="filter-box-title">
                     <div class="text-center">
-                        <h3>Filter</h3>
+                        <h3 id="filter-header">Filter</h3>
                     </div>
-                    <!-- Filter Topics Ordered list (click H3 to show UL items) -->
-                    <div class="filter-tab1 filter">
-                        <h3>Age</h3>
-                        <div class="age-filter">
-                            <ul>
-                                <li>Elementary School</li>
-                                <li>Middle School</li>
-                                <li>High School</li>
-                            </ul>
+                    <div id="filter-toggle">
+                        <!-- Filter Topics Ordered list (click H3 to show UL items) -->
+                        <div class="filter-tab1 filter">
+                            <h3 id="age-header">Age</h3>
+                            <div class="age-filter" id="filter-box-age">
+                                <ul>
+                                    <li>Elementary School</li>
+                                    <li>Middle School</li>
+                                    <li>High School</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-tab2 filter">
-                        <h3>Goal Amount</h3>
-                        <div class="goal-amount-filter">
-                            <ul>
-                                <li>$1 - $10</li>
-                                <li>$10 - $50</li>
-                                <li>$50 - $100</li>
-                                <li>$100+</li>
-                            </ul>
+                        <div class="filter-tab2 filter">
+                            <h3 id="goal-header">Goal Amount</h3>
+                            <div class="goal-amount-filter" id="filter-box-goal">
+                                <ul>
+                                    <li>$1 - $10</li>
+                                    <li>$10 - $50</li>
+                                    <li>$50 - $100</li>
+                                    <li>$100+</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-tab3 filter">
-                        <h3>Location</h3>
-                        <div class="location-filter">
-                            <ul>
-                                <li>Los Angeles</li>
-                                <li>Los Angeles County</li>
-                                <li>Orange County</li>
-                                <li>Ventura County</li>
-                                <li>Inland Empire</li>
-                            </ul>
+                        <div class="filter-tab3 filter">
+                            <h3 id="location-header">Location</h3>
+                            <div class="location-filter" id="filter-box-location">
+                                <ul>
+                                    <li>Los Angeles</li>
+                                    <li>Los Angeles County</li>
+                                    <li>Orange County</li>
+                                    <li>Ventura County</li>
+                                    <li>Inland Empire</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-tab4 filter">
-                        <h3>Activities</h3>
-                        <div class="activity-desc-filter">
-                            <ul>
-                                <li>DIY Projects</li>
-                                <li>Entertainment</li>
-                                <li>Education</li>
-                                <li>Volunteer</li>
-                            </ul>
+                        <div class="filter-tab4 filter">
+                            <h3 id="desc-header">Activities</h3>
+                            <div class="activity-desc-filter" id="filter-box-desc">
+                                <ul>
+                                    <li>DIY Projects</li>
+                                    <li>Entertainment</li>
+                                    <li>Education</li>
+                                    <li>Volunteer</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-tab5 filter">
-                        <input type="text" placeholder="Search Non-Profit" class="nonprofit-search">
-                    </div>
+                        <div class="filter-tab5 filter">
+                            <input type="text" placeholder="Search Non-Profit" class="nonprofit-search">
+                        </div>
 
-                    <div class="filter-tab6 filter">
-                        <input type="text" placeholder="Search Mentor" class="mentor-search">
+                        <div class="filter-tab6 filter">
+                            <input type="text" placeholder="Search Mentor" class="mentor-search">
+                        </div>
                     </div>
                 </div>
+                <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
 
+
+
+                <!-- --------------------- END OF FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
 
                 <div class="col-8 projectlist">
 
