@@ -56,3 +56,47 @@
    margin: 0;
  }
  /* ------------------------------------------------  */
+
+ /* header */
+
+ .brand-logo {
+   font-weight: 900;
+ }
+
+ .about-sections a {
+   font-weight: bolder;
+   margin-right:-30px;
+   color: black;
+ }
+
+ .about-sections a:hover {
+   font-size: 17px;
+   font-weight: 900;
+   text-decoration: underline;
+   background-image: none;    
+
+ }
+
+ .brand-logo:hover {
+  background-image: linear-gradient(-90deg, #18aadb57, #bfbe7ea1);  
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size:40px;
+ }
+
+ .sidenav {
+  background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
+  font-weight: bold;
+ }
+
+ .sidenav a:hover {
+   font-weight: bolder;
+   color:#18aadb;
+ }
+
+
+
+ /* MEDIA QUERIES */
+ 
+ 
+ 
