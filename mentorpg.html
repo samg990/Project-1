@@ -21,6 +21,29 @@
 </head>
 
 <body>
+
+    <!-- -----------------ADD PHOTO MODAL BEGINS--------------------- -->
+    <div class="modal fade" id="addPhotoBtn" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
     <div class="hero-unit_background-image"></div>
     <!-- Navbar -->
     <nav class="template-navbar text-center">
@@ -52,7 +75,8 @@
                             width="200" height="200">
                     </div>
                     <div class="tab-section ">
-                        <button class="btn-group-justified mentor-button mb1" id="addPhotoButton">Add To Photo
+                        <button type="button" class="mentor-button mb1" id="addPhotoButton" data-toggle="modal"
+                            data-target="#addPhotoBtn">Add To Photo
                             Album</button><br>
                         <button class="mentor-button mb2" id="addPostButton">Add Post</button><br>
                         <button class="mentor-button mb3" id="editProfileButton">Edit Profile</button><br>
@@ -68,7 +92,10 @@
                 <div class="col-7" id="mentor-feed">
                     <div class="text-center" id="mentor-name">Calvin Harris</div>
 
+
                     <div id="feed-input">
+
+
                         <!-- Javascript. This is where the POSTS are appended -->
                     </div>
                 </div>
@@ -85,6 +112,10 @@
 
 </body>
 <!-- JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 <script src="JavaScript/logout.js"></script>
 
 </html>
