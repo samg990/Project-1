@@ -8,10 +8,14 @@ $(document).ready(function() {
     storageBucket: "projectfamly.appspot.com",
     messagingSenderId: "49552131620",
   };
-  firebase.initializeApp(config);
+  if (!firebase.apps.length) {
+    firebase.initializeApp(config);
+  }
+  //   firebase.initializeApp(config);
 
   var database = firebase.database();
   const auth = firebase.auth();
+  var user = firebase.auth().currentUser;
 
   // sign in
   $("#loginBtn").click(function(e) {
@@ -29,8 +33,31 @@ $(document).ready(function() {
     const email = $("#email").val();
     const pass = $("#psw").val();
     const promise = auth.createUserWithEmailAndPassword(email, pass);
+    var firstName = $("#firstname")
+      .val()
+      .trim();
+    var lastName = $("#lastname")
+      .val()
+      .trim();
 
     promise.catch(e => console.log(e.message));
+
+    var profile = {
+      firstname: firstName,
+      lastname: lastName,
+      email: email,
+    };
+
+    database.ref().push(profile);
+
+    console.log(user);
+
+    // $("#mentor-name").text();
+    // $("#mentor-name").append(profile.firstname);
+
+    // console.log(profile.firstname);
+    // console.log(profile.lastname);
+    // console.log(profile.email);
   });
 
   auth.onAuthStateChanged(User => {
