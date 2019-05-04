@@ -12,7 +12,7 @@ $(document).ready(function () {
   };
   firebase.initializeApp(config);
 
-  var database = firebase.database();
+  const db = firebase.firestore();
   const auth = firebase.auth();
 
   // sign in
@@ -20,11 +20,10 @@ $(document).ready(function () {
     e.preventDefault();
     const email = $('#uname').val();
     const pass = $('#upsw').val();
-    const promise = auth.signInWithEmailAndPassword(email, pass);
-
+    const promise = auth.signInWithEmailAndPassword(email, pass).then(() => {
+      window.location = 'mentorpg.html';
+    });
     promise.catch(e => console.log(e.message));
-
-
   });
 
   // signup event
@@ -32,19 +31,24 @@ $(document).ready(function () {
     e.preventDefault();
     const email = $('#email').val();
     const pass = $('#psw').val();
-    const promise = auth.createUserWithEmailAndPassword(email, pass);
-    
-    promise.catch(e => console.log(e.message));
+    auth.createUserWithEmailAndPassword(email, pass).then(cred => {
+      return db.collection('users').doc(cred.user.uid).set({
+        firstname: $('#firstname').val(),
+        lastname: $('#lastname').val()
+      }).then(() => {
+        window.location = 'mentorpg.html';
+      })
+    });
+  })
 
-
-  });
-
+  // Authentication to make sure the user is signed in
   auth.onAuthStateChanged(User => {
-
-    if (User){
-      window.location = 'mentorpg.html';
+    if (User) {
+      db.collection('users').doc(User.uid).get().then(doc => {
+        console.log(doc.data().firstname)
+      });
       console.log(User)
-    } 
+    }
     else {
       console.log('not logged in')
     }
