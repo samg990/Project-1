@@ -109,19 +109,46 @@
                 </div>
                 <div class="modal-body">
                     <p>Edit Profile Bio</p>
-                    <form action="">
-                        <textarea rows="4" cols="50">
-                                        <p>Enter Profile Bio here.</p>
-                                        </textarea>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Location</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option class="losangeles-loc">Los Angeles</option>
+                                <option class="losangelescounty-loc">Los Angeles County</option>
+                                <option class="orangecounty-lo">Orange County</option>
+                                <option class="venturacounty-loc">Ventura County</option>
+                                <option class="inlandempire-loc">Inland Empire</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" name="pic" accept="image/*">
+                            <input type="submit">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea-bio">Enter Bio</label>
+                            <textarea class="form-control" id="mentorbio" rows="3"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button submit" input type="submit" class="btn btn-success">Submit</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button submit" input type="submit" class="btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                </div>
+
             </div>
         </div>
     </div>
+
+
 
     <!-- -------------------------------------- -->
 
@@ -186,9 +213,7 @@
 
                     <div id="feed-input">
                         <div class="feedInput">
-                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et dolorum provident
-                                aperiam id inventore soluta qui sapiente quia repellat consequuntur obcaecati maxime
-                                quae necessitatibus commodi, temporibus voluptate nulla fugiat!</h6>
+                            <h6 class="feedInputArea"></h6>
 
                         </div>
 
