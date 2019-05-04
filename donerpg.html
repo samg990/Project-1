@@ -17,8 +17,13 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Doner Page CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/donor.css">
-    <!-- Javascript for Filter Functionality -->
-    <script src="JavaScript/filter.js"></script>
+   
+    <!-- Firebase Link -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+
 </head>
 
 <body>
@@ -118,13 +123,11 @@
                         </div>
                     </div>
 
-
-                    <!--  -->
-<!-- Button to open the new project modal and generate new projects -->
-<br>
-<button type="button" class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Create New Project</button> 
-<!--  -->
                 </div>
+           
+
+
+            
                 <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
 
 
@@ -145,13 +148,13 @@
                     <div id="project-list">
 
 
+                        <!-- Button to open the new project modal and generate new projects -->
+<br>
+<button type="button" class="btn btn-outline-success btn-lg btn-block" onclick="document.getElementById('id01').style.display='block'">Create New Project</button> 
+
+
                         <!-- Javascript. This is where the mentor projects to choose from appear -->
                     
-
-
-
-
-
 
 
                     <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
@@ -159,7 +162,8 @@
                             <div style="width: 12rem; border:1px green; margin:3%;" class="card">
                               <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title">Entertainment</h5>
+                                <h4 class="card-title">Entertainment</h4>
+                                <h5 class="activity-title">Entertainment</h5>
                                 <p class="card-text">Celebrity Basketball Game...</p>
                               </div>
                               <div class="card-footer">
@@ -180,7 +184,8 @@
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">FMLY</span>
-    <form class="modal-content" action="/action_page.php">
+    <form class="modal-content">
+
     
     
     <section class="testimonial py-5" id="testimonial">
@@ -236,32 +241,44 @@
             
             <div class="form-row">    
                     <div class="form-group col-md-6">
-                            <select id="inputActivity" class="form-control">
-                                    <option selected>Choose Activities...</option>
-                                    <option>DIY Projects</option>
+                            <select placeholder="Choose Activities..." id="inputActivity" class="form-control">
+                                    <option name="Choose Activities...">Choose Activities...</option>
+                                    <option name="DIY Projects">DIY Projects</option>
                                     <option>Entertainment</option>
                                     <option>Education</option>
                                     <option>Volunteer</option>
                                   </select>
                     </div>
     
-    
+
+                    <div class="form-row">   
+
                     <div class="form-group col-md-6">
                               
-                              <select id="inputRange" class="form-control">
+                            <input style="width:100%" type="text" class="form-control" id="inputRange" placeholder="$ Goal">
+                        </div>
+                              <!-- <select id="inputRange" class="form-control">
                                 <option selected>Choose $ Range ...</option>
                                 <option>$1 - $10</option>
                                 <option>$10 - $50</option>
                                 <option>$50 - $100</option>
                                 <option>$100+</option>
-                              </select>
+                              </select> -->
                             </div>
     
+
+
+
+
+
+
+
                             <div class="form-row"> 
     
-                                    <div style: class="form-group col-md-12">Project Details</div>
-                                    <textarea id="projectDetails" name="comment" cols="40" rows="5" class="form-control"></textarea>
+                                    <div class="form-group col-md-12"></div>
+                                    <textarea placeholder="Project Details" id="projectDetails" name="comment"  style="margin:3%" cols="40" rows="5" class="form-control"></textarea>
                           </div>
+                          
     
         <div class="form-row">
             <div class="form-group">
@@ -280,22 +297,27 @@
     </div>
         
         <div class="form-row">
-            <button type="button" id="submitProject" class="btn btn-danger">Submit</button>
-            <button type="button" id="cancelProject" class="btn btn-danger">Submit</button>
+    
+            <div class="clearfix">
+                    <button id="submitBTN" type="submit" class="btn btn-success">Submit</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                      class="btn btn-danger" >Cancel</button>
+                  </div>
+        
         </div>
     </form>
     
     </div>
     </div>
-    </div>
+    </div> 
     </section>
-    <!--  -->
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-    
-    <div class="clearfix">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-    <button type="submit" class="signup">Sign Up</button>
-    </div>
+
+
+
+
+<!-- DONATION CART - START -->
+
+
     </div>
     </form>
     </div>
@@ -346,6 +368,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-
+    <!-- <script src="JavaScript/filter.js"></script> -->
+    <script src="JavaScript/JavaScript-trial.js"></script>
 
 </html>
