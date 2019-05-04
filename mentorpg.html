@@ -23,6 +23,28 @@
 
 <body>
 
+
+    <!-- PROFILE BIO MODAL -->
+    <div class="modal fade" id="mentorBio" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hi! I'm #NameGoesHere!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="profile-Bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem
+                        quibusdam maiores ad sapiente ipsa molestias nulla, iure labore voluptatem id minima. Aut
+                        expedita delectus voluptate, cupiditate doloribus ducimus nesciunt..</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- -----------------ADD PHOTO MODAL BEGINS--------------------- -->
     <div class="modal fade" id="addPhotoBtn" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -73,7 +95,7 @@
                 <div class="col-2 text-center" id="mentor-act-tabs">
                     <div class="float-profile-pic">
                         <img id="profilePicture" class="profile-picture" src="images/people/mand4.jpg" alt="man-image"
-                            width="200" height="200">
+                            width="200" height="200" data-toggle="modal" data-target="#mentorBio">
                     </div>
                     <div class="tab-section ">
                         <button type="button" class="mentor-button mb1" id="addPhotoButton" data-toggle="modal"
