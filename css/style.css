@@ -2,7 +2,6 @@
 
 body {
   /* background: hsl(0, 0%, 83%, .5) !important;  */
-  /* background-image: url("/images/background/website-background-images-hd-7.jpg"); */
   max-height: 900px;
 }
 
@@ -29,6 +28,10 @@ body {
   margin-right: 0px;
   margin-left: 0px;
 }
+.jumbotron h1 {
+  letter-spacing: 30px;
+}
+
 
 .template-navbar h1 {
   letter-spacing: 10px;
@@ -47,6 +50,10 @@ body {
 
 .donorSubTitle {
   margin-bottom: 35px;
+}
+
+.mentorSubTitle {
+margin-top: -12px;
 }
 
 
@@ -98,31 +105,46 @@ body {
     0 17px 50px 0 rgba(191, 189, 125, 0.9);
 } */
 
-/* #donor1 {
-
-}
+/* #donor1 img{
+margin-top: 50px;
+} */
+/*
 #mentor1 {
 
 }  */
 
 
 
-
-
 button:hover {
   box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
     0 17px 50px 0 rgba(191, 189, 125, 0.5);
+    background-color: #1DAADB;
+}
+  
+img:hover {
+  opacity: .9; 
+  background-color: black;
+}
+
+a.donateBtn:hover {
+  text-decoration:none; 
+  color: white;
+  background-color: #9AB897;
+  cursor:pointer; 
+ box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
+  0 17px 50px 0 rgba(191, 189, 125, 0.5);
+  border: 3px solid black;
 }
 
 a:hover 
 {
      text-decoration:none; 
      color: white;
-     background-color: #9AB897;
      cursor:pointer; 
-     box-shadow: 0 10px 10px 0 rgb(24, 171, 220, 0.2),
-     0 17px 50px 0 rgba(191, 189, 125, 0.5); 
-     border: 3px solid black;
+    box-shadow: 0 5px 5px 0 rgb(24, 171, 220, 0.2),
+     0 17px 50px 0 rgba(191, 189, 125, 0.5);
+     font-weight: 900;
+     
 } 
 
 .template-navbar {
@@ -195,7 +217,7 @@ a:hover
   margin-top: -18px;
   border-style: inset;
 }
-
+*/
 .signup-button {
   font-size: 25px;
   font-weight: bold;
@@ -204,7 +226,7 @@ a:hover
   margin-top: 70px;
   border-radius: 3%;
   text-decoration: underline;
-} */
+} 
 
 .navbar {
   background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);

@@ -7,26 +7,276 @@
     <title>FMLY - About Us Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Reset CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" /> -->
+
     <!-- Materialize CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <!-- Materialize Fonts CSN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fonts Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/about.css" />
     <!-- My JS -->
     <script src="about.js"></script>
+
+
+
 </head>
 
 <body>
 
+    <header class="header head-photo">
+        <style>
+            header {
+                background: url(images/people/woodshop-work.jpg);
+                background-size: cover;
+                background-position: center;
+                min-height: 1000px;
+            }
+
+            @media screen and (max-width: 670px) {
+                header {
+                    min-height: 500px;
+                }
+            }
+        </style>
+
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo white-text">F M L Y</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu"><i
+                        class="material-icons white-text">menu</i></a>
+                <ul class="right hide-on-med-and-down black-text about-sections">
+                    <li><a href="#mission">| About FMLY |</a></li>
+                    <li><a href="#">| Meet the FMLY founders |</a></li>
+                    <li><a href="#involved">| Get Involved |</a></li>
+                    <li><a href="#">| Partnerships |</a></li>
+                    <li><a href="#contact-us">| Contact |</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#mission">About FMLY</a></li>
+                    <li><a href="#">Meet the FMLY founders</a></li>
+                    <li><a href="#involved">Get Involved</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- MISSION + HOW + WHERE Section -->
+    <section class="container section" id="mission">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="images/people/group-youth.jpg" alt="group of happy youth" class="responsive-img">
+            </div>
+            <div class="col s12 l7 offset-l1">
+                <h2 class="green-text text-darken-4">Our Mission</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint rem nisi at voluptates deserunt
+                    necessitatibus totam quam!</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col s12 l4 push-l8">
+                <img src="images/people/group-youth.jpg" alt="group of happy youth" class="responsive-img">
+            </div>
+            <div class="col s12 l6 right-align pull-l4 offset-l2">
+                <h2 class="green-text text-darken-4">How?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint rem nisi at voluptates deserunt
+                    necessitatibus totam quam!</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col s12 l4">
+                <img src="images/people/group-youth.jpg" alt="group of happy youth" class="responsive-img">
+            </div>
+            <div class="col s12 l6 ">
+                <h2 class="green-text text-darken-4">Where?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint rem nisi at voluptates deserunt
+                    necessitatibus totam quam!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/people/manyppl.jpg" alt="a lot of diverse adults" class="responsive-img sport-kids">
+        </div>
+    </div>
+
+    <div class="container section" id="involved">
+        <div class="row">
+            <div class="col s12 l4">
+                <h4>Interested in Getting Involved?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id aperiam, similique harum
+                    exercitationem
+                    n.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#Donor-tab" class="black-text text-darken-3">DONOR</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#Mentor-tab" class="black-text text-darken-3">Mentor</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="Donor-tab">
+                    <p class="flow-text green-t text-darken-3">DONOR</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quasi quia fugiat omnis tempora
+                        optio, debitis minus blanditiis rerum quis illum unde nostrum vero reiciendis aliquam ut dolore
+                        porro quam.</p>
+                </div>
+                <div class="col s12" id="Mentor-tab">
+                    <p class="flow-text green-t text-darken-3">MENTOR</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quasi quia fugiat omnis tempora
+                        optio, debitis minus blanditiis rerum quis illum unde nostrum vero reiciendis aliquam ut dolore
+                        porro quam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/people/youth-mentor-group.jpg" alt="a lot of diverse adults"
+                class="responsive-img sport-kids">
+        </div>
+    </div>
+
+    <div class="section container" id="contact-us">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="black-text">Get In Touch</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error eaque ullam assumenda cumque mollitia
+                    magni cum tempora velit, illo, a molestias atque. Consequuntur expedita ducimus repellat maxime
+                    magni? Officiis, obcaecati.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error eaque ullam assumenda cumque mollitia
+                    magni cum tempora velit, illo, a molestias atque. Consequuntur expedita ducimus repellat maxime
+                    magni? Officiis, obcaecati.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error eaque ullam assumenda cumque mollitia
+                    magni cum tempora velit, illo, a molestias atque. Consequuntur expedita ducimus repellat maxime
+                    magni? Officiis, obcaecati.</p>
+            </div>
+
+            <div class="col s12 l5 offset-l2">
+                <form action="" class="fmly-contact">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">schedule</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">When would you like a call?</label>
+                    </div>
+                    <div class="input-field">
+                        <p>How would you like to be a part of the FMLY</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>DONOR: Fund Mentors!</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>MENTOR: Lift Youth!</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>INVESTOR IN FMLY OPERATIONS</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer grey">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit modi veniam. Sapiente
+                        !</p>
+                </div>
+                <div class="col s12 l4 offset-2">
+                    <h5>Connect</h5>
+                    <ul class="social-icons">
+                        <li><a href="#" class="tooltipped btn-floating btn-small blue lighten-2"
+                                data-tooltip="Facebook">
+                                <i class=" fab fa-facebook"></i>
+                            </a></li>
+
+                        <li><a href="#" class="tooltipped btn-floating btn-small blue lighten-2"
+                                data-tooltip="Instagram">
+                                <i class=" fab fa-instagram"></i>
+                            </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small blue lighten-2" data-tooltip="Twitter">
+                                <i class=" fab fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small blue lighten-2"
+                                data-tooltip="Linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue lighten-2">
+            <div class="container center-align white-text">&copy; 2019 Just-Smorje</div>
+        </div>
+    </footer>
+    </div>
 
 
 
 
 
 
+
+
+
+
+    <!-- JQuery -->
+    <script src=" https://code.jquery.com/jquery-3.4.0.js"> </script>
     <!-- Materialize Javascript -->
-    <script src="JavaScript/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+
+    <script>
+        $(document).ready(function () {
+            $(".sidenav").sidenav();
+            $(".parallax").parallax();
+            $(".tabs").tabs();
+            $(".datepicker").datepicker({
+                disableWeekends: true
+            });
+            $(".tooltipped").tooltip();
+        });
+    </script>
 </body>
 
 

@@ -1,7 +1,7 @@
 /* TEMPLATE CSS */
 
 body { 
-    /* background: hsl(0, 0%, 83%, .5) !important;  */
+    background: rgb(255, 255, 255) !important; 
     /* background-image: url("/images/background/worlddots.jpg");
     opacity: 10%; */
     
@@ -17,7 +17,7 @@ body {
     height: 100%;
     background-image: url("../images/background/worlddots.jpg");
     background-size: cover;
-    opacity: 0.90;
+    opacity: 0.20;
     top: 0;
     left: 0;
     bottom: 0;
@@ -32,7 +32,7 @@ body {
 .template-navbar {
     color: black;
     background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
-    border-bottom: 5px solid grey;
+    border-bottom: 5px solid lightgrey;
     height: 90px;
     width: auto;
     margin-right: 0px;
@@ -81,7 +81,6 @@ body {
     font-size: 50px;
     font-weight: bolder;
     margin-top: 10px;
-    border-top: 1px solid #bfbe7e;
     border-right: 1px solid #bfbe7e;
     height: 600px;
     /* background-color:rgba(216, 216, 216, 0.5); */
@@ -92,7 +91,6 @@ body {
         font-size: 50px;
         font-weight: bolder;
         margin-top: 10px;
-        border-top: 1px solid rgba(0, 168, 219, 0.6);
         border-left: 1px solid rgba(0, 168, 219, 0.6);        
         height: 600px;
         /* background-color:rgba(216, 216, 216, 0.5); */
@@ -104,7 +102,7 @@ body {
     } 
     
     #mentor-feed {
-        background-color:rgba(216, 216, 216, 0.5);
+        background-image: linear-gradient(-90deg, #18aadb10, #bfbe7e1a);    
         height: 600px;
     }
 
@@ -140,9 +138,23 @@ body {
         background-color: rgba(211, 211, 211, .1);
     }
 
-    button:hover {
+    .mentor-button:hover {
         box-shadow: 0 12px 16px 0 rgb(24, 171, 220, .2),0 17px 50px 0 rgba(191, 189, 125, 0.9);
     }
+
+    .post-new:hover {
+        box-shadow: 0 12px 16px 0 rgba(35, 170, 215, 0.0),0 17px 50px 0 rgba(191, 189, 125, 0.5);
+        border:  solid black;
+        background-color: #bfbe7e;
+        font-weight: 500;
+        color: black;
+    } 
+    
+    .post-new h6:hover {
+        color:black;
+    }
+
+    
 
     .add-act-button h6{
         font-weight: bolder;
@@ -150,6 +162,24 @@ body {
         color: #bfbe7e;
     }
     
+    #logout-button {
+        float: right;
+        margin-right: 50px;
+        margin-top: -60px;
+        padding: 5px;
+        padding-bottom: 15px;
+        height: 25px;
+        border: 2px solid black;
+    }
+   
+    #logout-button h6 {
+        font-size: 12px;
+    }
+
+    #logout-button:hover {
+        color: #30ACD4;
+        border: 2px solid white;
+    }
     /* DONOR PG MEDIA QUERIES */
 
     @media screen and (max-width: 1200px) {
@@ -195,5 +225,9 @@ body {
         }
         #mentor-name {
             font-size: 40px;
+            -webkit-text-stroke: 1px white;
+
         }
+
+        
     }
