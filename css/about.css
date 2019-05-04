@@ -24,10 +24,10 @@
    line-height: 0;
    height: auto;
    color: rgba(255,255,255,.9);
- }
+ } 
    .parallax-container .section {
      width: 100%;
-   }
+   } 
  
  @media only screen and (max-width : 992px) {
    .parallax-container .section {
@@ -69,12 +69,51 @@
    color: black;
  }
 
+ .sidenav {
+  background-image: linear-gradient(-90deg, #18aadbd7, #bfbe7e);    
+  font-weight: bold;
+ }
+
+
+ /* MISSION - HOW - WHERE SECTION */
+
+ .section {
+   padding-bottom: 4vw;   
+   padding-top: 4vw;
+ }
+
+/* Parallax Section */
+
+
+
+
+
+/* INTERESTED Section */
+
+.tabs .indicator {
+  background-color: #1DAADa;
+}
+.tabs .tab a:focus, a.tabs .tab a:focus.active {
+  background: linear-gradient(-90deg, #18aadb3f, #bfbe7ee7);
+
+}
+
+/* FOOTER */
+
+.social-icons li{
+  display: inline-block;
+}
+
+
+
+
+ /* HOVER CSS */
  .about-sections a:hover {
    font-size: 17px;
    font-weight: 900;
    text-decoration: underline;
-   background-image: none;    
-
+   color:#18aadb;
+  background: none;
  }
 
  .brand-logo:hover {
@@ -84,14 +123,11 @@
   font-size:40px;
  }
 
- .sidenav {
-  background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
-  font-weight: bold;
- }
+
 
  .sidenav a:hover {
    font-weight: bolder;
-   color:#18aadb;
+   color:white;
  }
 
 
