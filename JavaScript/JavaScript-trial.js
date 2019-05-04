@@ -1,21 +1,22 @@
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyBXpm4owlDd5Lh937ObtnvNHZ_2vDAk5VI",
-  authDomain: "projectfamly.firebaseapp.com",
-  databaseURL: "https://projectfamly.firebaseio.com",
-  projectId: "projectfamly",
-  storageBucket: "projectfamly.appspot.com",
-  messagingSenderId: "49552131620"
+const firebaseConfig = {
+  apiKey: "AIzaSyDUocsfxxFDln7Mx1k-wpn_mtmb0mjVIwc",
+  authDomain: "test1-ebe40.firebaseapp.com",
+  databaseURL: "https://test1-ebe40.firebaseio.com",
+  projectId: "test1-ebe40",
+  storageBucket: "test1-ebe40.appspot.com",
+  messagingSenderId: "48362215663",
+  appId: "1:48362215663:web:5d4a7ca53c9c9612"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 // Assign the reference to the database to a variable named 'database'
 // var database = ...
 var database = firebase.database();
 
 // Button for adding projects
-$("#submitProject").on("click", function(event) {
+$("#submitBTN").on("click", function(event) {
   event.preventDefault();
 
   //  Store input in variables
@@ -25,11 +26,19 @@ $("#submitProject").on("click", function(event) {
   var mentorEmail = $("#inputEmail4")
     .val()
     .trim();
-  var educationChoice = $("#inputEducation");
-  var locationChoice = $("#inputLocation");
-  var activitiesChoice = $("#inputActivity");
+  var educationChoice = $("#inputEducation")
+    .find(":selected")
+    .text();
+  var locationChoice = $("#inputLocation")
+    .find(":selected")
+    .text();
+  var activitiesChoice = $("#inputActivity")
+    .find(":selected")
+    .text();
   var rangeChoice = $("#inputRange");
-  var projectDetails = $("#projectDetails");
+  var projectDetails = $("#projectDetails")
+    .val()
+    .trim();
 
   //Upload all inputs to Firebase
   var newProject = {
@@ -45,23 +54,35 @@ $("#submitProject").on("click", function(event) {
   // Uploads project data to the database FMLY @ Firebase
   database.ref().push(newProject);
 
-  alert("Project successfully added");
+  // console.log(projectName);
+  // console.log(mentorEmail);
+  // console.log(educationChoice);
+  // console.log(locationChoice);
+  // console.log(activitiesChoice);
+  // console.log(rangeChoice);
+  // console.log(projectDetails);
 
-  // Clears all of the text-boxes
+  // alert("Project successfully added");
 
-  $("#inputEducation").val("");
-  $("#inputLocation").val("");
-  $("#inputActivity").val("");
-  $("#inputRange").val("");
-  $("#projectDetails").val("");
-});
+  // // Clears all of the text-boxes
 
-// Create Firebase event for adding employee to the database and a row in the html when a user adds an entry
-database.ref().on("child_added", function(childSnapshot) {
-  console.log(childSnapshot.val());
+  // $("#inputEducation").val("");
+  // $("#inputLocation").val("");
+  // $("#inputActivity").val("");
+  // $("#inputRange").val("");
+  // $("#projectDetails").val("");
 
-  newCard = "<div class='project-group'></div>";
+  // // Create Firebase event for adding employee to the database and a row in the html when a user adds an entry
+  // database.ref().on("child_added", function(childSnapshot) {
+  //   console.log(childSnapshot.val());
 
-  // Store everything into a variable.
-  var name = childSnapshot.val().projectName.text();
+  //   var newCard = $("<div class='project-group'></div>").append(
+  //     $("#card-title").text(childSnapshot.val().projectName),
+  //     $("#activity-title").text(childSnapshot.val().activitiesChoice),
+  //     $("#card-text").text(childSnapshot.val().projectDetails)
+  //   );
+
+  //   // Append the new row to the table
+  //   $("<div class='project-group'></div>").append(newCard);
+  // });
 });
