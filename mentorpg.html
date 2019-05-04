@@ -54,10 +54,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <p>Add a Photo to Your Photo Album.</p>
+                    <form action="/action_page.php">
+                        <input type="file" name="pic" accept="image/*">
+                        <input type="submit">
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -65,6 +68,65 @@
     </div>
 
     <!-- -------------------------------------- -->
+
+    <!-- -----------------ADD POST MODAL BEGINS--------------------- -->
+    <div class="modal fade" id="addpostbtn" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Add a Post to Your Page.</p>
+                    <form action="">
+                        <textarea rows="4" cols="50">
+                                <p>What's going on?...</p>
+                                </textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button submit" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+
+    <!-- -----------------EDIT PROFILE BEGINS--------------------- -->
+    <div class="modal fade" id="editProfbtn" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Edit Profile Bio</p>
+                    <form action="">
+                        <textarea rows="4" cols="50">
+                                        <p>Enter Profile Bio here.</p>
+                                        </textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button submit" input type="submit" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+
+
+
     <div class="hero-unit_background-image"></div>
     <!-- Navbar -->
     <nav class="template-navbar text-center">
@@ -95,12 +157,21 @@
                         <img id="profilePicture" class="profile-picture" src="images/people/mand4.jpg" alt="man-image"
                             width="200" height="200" data-toggle="modal" data-target="#mentorBio">
                     </div>
+
+                    <!-- LEFT TAB SECTION -->
                     <div class="tab-section ">
+                        <!-- ADD PHOTO BUTTON -->
+
                         <button type="button" class="mentor-button mb1" id="addPhotoButton" data-toggle="modal"
                             data-target="#addPhotoBtn">Add To Photo
                             Album</button><br>
-                        <button class="mentor-button mb2" id="addPostButton">Add Post</button><br>
-                        <button class="mentor-button mb3" id="editProfileButton">Edit Profile</button><br>
+                        <!-- ADD POST BUTTON -->
+
+                        <button class="mentor-button mb2" id="addPostButton" data-toggle="modal"
+                            data-target="#addpostbtn">Add Post</button><br>
+                        <!-- EDIT PROFILE BUTTON -->
+                        <button class="mentor-button mb3" id="editProfileButton" data-toggle="modal"
+                            data-target="#editProfbtn">Edit Profile</button><br>
                     </div>
                     <div class="add-act-button text-center ">
                         <button class="btn btn-outline post-new" id="postNewActButton">
@@ -115,6 +186,10 @@
 
 
                     <div id="feed-input">
+                        <div class="feedInput">
+
+
+                        </div>
 
 
                         <!-- Javascript. This is where the POSTS are appended -->
