@@ -1,132 +1,129 @@
 /* TEMPLATE CSS */
 
-body { 
-    background: hsl(0, 0%, 83%, .25) !important; 
-    max-height: 900px;
+body {
+  background: hsl(0, 0%, 83%, 0.25) !important;
+  max-height: 900px;
 }
 
-
 .wrapper {
-    margin-right:5px;
-    margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .hero-unit_background-image {
-    position: absolute;
-    z-index: -1;   
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/background/worlddots.jpg");
-    background-size: cover;
-    opacity: 0.10;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background/worlddots.jpg");
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 .template-navbar {
-    color: black;
-    background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);    
-    border-bottom: 5px solid grey;
-    height: 90px;
-    width: auto;
-    margin-right: 0px;
-    margin-left: 0px;
+  color: black;
+  background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
+  border-bottom: 5px solid grey;
+  height: 90px;
+  width: auto;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .template-navbar h1 {
-    letter-spacing: 10px;
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 0px;
-    color: whitesmoke;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  color: whitesmoke;
 }
 
 .template-navbar h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 0px;
-    /* font-style: italic; */
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  /* font-style: italic; */
 }
 
 /* DONORS PAGE CSS */
 
 /* Filter Box */
 .filter-box {
-    /* font-size: 50px; */
-    /* font-weight: bolder; */
-    margin-top: 10px;
-    /* border-top: 1px solid #bfbe7e9f; */
-    /* border-bottom: 1px solid #bfbe7e9f; */
-    height: 550px;
+  /* font-size: 50px; */
+  /* font-weight: bolder; */
+  margin-top: 10px;
+  /* border-top: 1px solid #bfbe7e9f; */
+  /* border-bottom: 1px solid #bfbe7e9f; */
+  height: 550px;
 }
 
 .filter h3 {
-    font-size: 15px;
-    margin-left: 40px;
+  font-size: 15px;
+  margin-left: 40px;
 }
 
 .filter li {
-    font-size: 10px;
-    margin-left: 40px;
-
+  font-size: 10px;
+  margin-left: 40px;
 }
 
-.mentor-search, .nonprofit-search {
-    font-size: 10px;
-    border: 1px solid black;
-    margin-left: 40px;
-
+.mentor-search,
+.nonprofit-search {
+  font-size: 10px;
+  border: 1px solid black;
+  margin-left: 40px;
 }
 
 /* Donation Cart Box */
 
 .donation-cart {
-    margin-top: 10px;
-    /* border-top: 1px solid #18aadb79; */
-    height: 550px;
+  margin-top: 10px;
+  /* border-top: 1px solid #18aadb79; */
+  height: 550px;
 }
 
-.donation-cart h3{
-    font-size: 24px;
+.donation-cart h3 {
+  font-size: 24px;
 }
 
 .donation-cart-list {
-    height: 400px;
+  height: 400px;
 }
 
 .donation-total p {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-top: 10px;
-    text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: 10px;
+  text-decoration: underline;
 }
 
 /* .donation-total {
     border-bottom: 1px inset #18aadb79;
 } */
 #donationTotal {
-    font-size: 30px;
-    font-weight: bolder;
-    color: #18aadb;
-    padding: 0px;
-    margin-top: -5px;
-    padding-bottom: 5px;
-    text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #18aadb;
+  padding: 0px;
+  margin-top: -5px;
+  padding-bottom: 5px;
+  text-decoration: none;
 }
 
 /* Project List */
 
 #project-list {
-    height: 600px;
-    margin-top:10px;
-    /* background-color:rgba(236, 236, 236, 0.25); */
-    border-right: 2px solid #18aadb49;
-    border-left: 2px solid #bfbe7e9f;
-
+  height: 600px;
+  margin-top: 10px;
+  /* background-color:rgba(236, 236, 236, 0.25); */
+  border-right: 2px solid #18aadb49;
+  border-left: 2px solid #bfbe7e9f;
 }
 
 /* Donor Media Queries */
@@ -134,32 +131,34 @@ body {
 /* SMALLEST SIZE SHOULD HAVE FEED SPAN COL-12 AND DONATION BELOW */
 /* 705px smallest with all columns */
 @media screen and (max-width: 1000px) {
-.filter h3, .filter li, .mentor-search, .nonprofit-search  {
+  .filter h3,
+  .filter li,
+  .mentor-search,
+  .nonprofit-search {
     margin-left: 1px;
-}
-.mentor-search, .nonprofit-search {
+  }
+  .mentor-search,
+  .nonprofit-search {
     width: 100px;
-}
+  }
 
-.donation-total p {
+  .donation-total p {
     font-size: 12px;
-}
-#donationCartItems {
+  }
+  #donationCartItems {
     font-size: 10px;
-}
-#donationTotal {
-    font-size:20px;
-}
-.wrapper {
-    margin-right:0px;
-    margin-left:0px;
-}
-.donation-cart h3 {
+  }
+  #donationTotal {
     font-size: 20px;
+  }
+  .wrapper {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .donation-cart h3 {
+    font-size: 20px;
+  }
 }
-}
-
-
 
 /* @media screen and (max-width: 800px) {
     
@@ -181,7 +180,6 @@ body {
     
 }} */
 
-
 /*
 @media screen and (max-width: 750px) {
     .filter-box  {
@@ -193,3 +191,15 @@ body {
         width: 90%;
 }} */
 
+.cancelbtn1 {
+  padding: 10px 10px;
+  background-color: #f44336;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.submitbtn1 {
+  padding: 10px 10px;
+  background-color: #36f436;
+  font-weight: bold;
+  border-radius: 7px;
+}

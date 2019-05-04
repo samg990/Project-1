@@ -148,7 +148,7 @@
 </div>
 <div class="col-md-8 py-5 border">
 <h4 class="pb-4">Please fill with project details</h4>
-<form>
+<form id="form1">
     <div class="form-row">
         <div class="form-group col-md-6">
           <input id="nameInput" name="Project Name" placeholder="Project Name" class="form-control" type="text">
@@ -229,7 +229,12 @@
 </div>
     
     <div class="form-row">
-        <button type="button" id="submitProject" class="btn btn-danger">Submit</button>
+        
+        <div class="clearfix">            
+            <button type="submit" class="submitbtn1">Submit</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn1">Cancel</button>
+          </div>
     </div>
 </form>
 
