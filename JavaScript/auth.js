@@ -34,7 +34,8 @@ $(document).ready(function () {
     auth.createUserWithEmailAndPassword(email, pass).then(cred => {
       return db.collection('users').doc(cred.user.uid).set({
         firstname: $('#firstname').val(),
-        lastname: $('#lastname').val()
+        lastname: $('#lastname').val(),
+        bio: $('#aboutMe').val(),
       }).then(() => {
         window.location = 'mentorpg.html';
       })
