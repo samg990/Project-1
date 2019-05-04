@@ -19,7 +19,11 @@ $(document).ready(function () {
             // account info
             db.collection('users').doc(user.uid).get().then(doc => {
                 console.log(doc.data().firstname)
+                // Main Title
                 $('#mentor-name').text(doc.data().firstname + " " + doc.data().lastname)
+                // inside model
+                $('.modal-title').text("Hi! I'm " + doc.data().firstname + " " + doc.data().lastname)
+                $('.profile-Bio').text(doc.data().bio)
             });
         }
     });
