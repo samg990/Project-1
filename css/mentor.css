@@ -137,7 +137,7 @@ body {
         border: 5px solid #bfbe7e;
         background-color: rgba(211, 211, 211, .1);
     }
-
+/* HOVER CSS */
     .mentor-button:hover {
         box-shadow: 0 12px 16px 0 rgb(24, 171, 220, .2),0 17px 50px 0 rgba(191, 189, 125, 0.9);
     }
@@ -151,10 +151,12 @@ body {
     } 
     
     .post-new h6:hover {
-        color:black;
+        color: black;
     }
 
-    
+    .profile-picture:hover {
+    border: 3px solid #18aadb;
+    }
 
     .add-act-button h6{
         font-weight: bolder;
