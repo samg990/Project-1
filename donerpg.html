@@ -28,30 +28,38 @@
 
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">FMLY</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+      
 
     <div class="hero-unit_background-image"></div>
 
     <!-- Navbar -->
-    <nav class="template-navbar text-center">
-        <h1>FMLY</h1>
-        <h2>Fund Mentors Lift Youth</h2>
+    <nav  style="height:25%" class="template-navbar text-center">
+
+            <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">FMLY</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                 
+
+                  </nav>
+                  <h1 style="text-align: center">FMLY</h1>
+         
+                  <h2 style="text-align: center">Fund Mentors Lift Youth</h2>
+                  
+                  <br>
+      
     </nav>
 
     <div class="wrapper">
@@ -159,20 +167,26 @@
 
                     <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
                     <div class="project-group">
-                            <div style="width: 12rem; border:1px green; margin:3%;" class="card">
-                              <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681" alt="Card image cap">
+
+
+
+                            <!-- //Sample Project #1 -->
+                            <div  id="projectCard" style="height:12%" class="col-4 card">
+                              <!-- <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681" alt="Card image cap"> -->
                               <div class="card-body">
-                                <h4 class="card-title">Entertainment</h4>
-                                <h5 class="activity-title">Entertainment</h5>
-                                <p class="card-text">Celebrity Basketball Game...</p>
+                                    <h4 id="projectTitle" class="card-title">Science Fair Project</h4>
+                                    <h5 id="projectMentor" class="card-title">@JoelDomo</h5>
+                                    <p id="projectDetails"class="card-text">Supporting 5th Grade Student Project</p>
+                                    <p id="projectGoal"class="card-text">$100</p>
                               </div>
                               <div class="card-footer">
                                     <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Mentor</a>
                                     <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Donate</a>
-                                    <br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                            
                               </div>
+                           
                             </div>
+  
 
                             <!-- END of Project Sample -->
 
@@ -265,12 +279,6 @@
                                 <option>$100+</option>
                               </select> -->
                             </div>
-    
-
-
-
-
-
 
 
                             <div class="form-row"> 
@@ -299,7 +307,7 @@
         <div class="form-row">
     
             <div class="clearfix">
-                    <button id="submitBTN" type="submit" class="btn btn-success">Submit</button>
+                    <button id="submitBTN" type="submit" class="btn btn-success" onclick="document.getElementById('id01').style.display='none'" >Submit</button>
                     <button type="button" onclick="document.getElementById('id01').style.display='none'"
                       class="btn btn-danger" >Cancel</button>
                   </div>
