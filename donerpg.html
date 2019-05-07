@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,40 +12,20 @@
         integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" /> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!-- Doner Page CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/donor.css">
-   
-    <!-- Firebase Link -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script> -->
 
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-
-
+    <!-- Javascript for Filter Functionality -->
+    <script src="JavaScript/filter.js"></script>
 </head>
 
 <body>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">FMLY</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-
     <div class="hero-unit_background-image"></div>
 
     <!-- Navbar -->
@@ -54,23 +34,98 @@
         <h2>Fund Mentors Lift Youth</h2>
     </nav>
 
-    <div class="wrapper">
+    <div class="wrapper donationPageWrapper">
 
         <!-- Page -->
-        <div class="container-fluid mentor-page">
 
-            <!-- Donate/Mentor Blocks -->
+        <!-- Donate/Mentor Blocks -->
 
-            <div class="row ">
+        <div class="row justify-content-center ">
 
-                <!-- Filter Through Activities -->
-                <div class="col-2" id="filter-box-title">
+            <!-- Top Row Filter -->
+            <div class="col-12 " id="filter-dropdown-title"></div>
+
+            <div id="filter-dropdowns">
+                <h3 class="filter-ddm" id="filter-dropdown-header">Filter By:</h3>
+                <!-- AGE DROPDOWN MENU -->
+                <div class="dropdown filter-ddm age-dd">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="ageDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        AGE
+                    </button>
+                    <div class="dropdown-menu age-ddm" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Elementary School</a>
+                        <a class="dropdown-item" href="#">Middle School</a>
+                        <a class="dropdown-item" href="#">High School</a>
+                    </div>
+                </div>
+
+                <!-- GOAL DROPDOWN MENU -->
+                <div class="dropdown filter-ddm age-dd">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="goalDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        GOAL AMOUNT
+                    </button>
+                    <div class="dropdown-menu  goal-ddm" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">$1 - $10</a>
+                        <a class="dropdown-item" href="#">$10 - $50</a>
+                        <a class="dropdown-item" href="#">$50 - $100</a>
+                        <a class="dropdown-item" href="#">$100+</a>
+                    </div>
+                </div>
+
+                <!-- LOCATION DROPDOWN MENU -->
+                <div class="dropdown filter-ddm age-dd">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="locationDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        LOCATION
+                    </button>
+                    <div class="dropdown-menu location-ddm" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Los Angeles</a>
+                        <a class="dropdown-item" href="#">Los Angeles County</a>
+                        <a class="dropdown-item" href="#">Orange County</a>
+                        <a class="dropdown-item" href="#">Ventura County</a>
+                        <a class="dropdown-item" href="#">Inland Empire</a>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY DESCRIPTION DROPDOWN MENU -->
+                <div class="dropdown filter-ddm age-dd">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="descDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ACTIVITY
+                    </button>
+                    <div class="dropdown-menu desc-ddm" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item diy-ddtxt" href="#">DIY Projects</a>
+                        <a class="dropdown-item entertainment-ddtxt" href="#">Entertainment</a>
+                        <a class="dropdown-item education-ddtxt" href="#">Education</a>
+                        <a class="dropdown-item voluenter-ddtxt" href="#">Volunteer</a>
+                    </div>
+                </div>
+
+                <div class="donationsSearchBars">
+                    <!-- FILTER - SEARCH NON PROFIT BAR -->
+                    <div class="filter-tab5 filter-ddm filter">
+                        <input type="text" placeholder="Search Non-Profit" class="nonprofit-search">
+                    </div>
+
+                    <!-- FILTER - SEARCH MENTOR BAR -->
+                    <div class="filter-tab6 filter-ddm filter">
+                        <input type="text" placeholder="Search Mentor" class="mentor-search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top Row Filter -->
+
+        <!-- Filter Through Activities -->
+        <!-- <div class="col-2" id="filter-box-title">
                     <div class="text-center">
                         <h3 id="filter-header">Filter</h3>
                     </div>
-                    <div id="filter-toggle">
-                        <!-- Filter Topics Ordered list (click H3 to show UL items) -->
-                        <div class="filter-tab1 filter">
+                    <div id="filter-toggle"> -->
+        <!-- Filter Topics Ordered list (click H3 to show UL items) -->
+        <!-- <div class="filter-tab1 filter">
                             <h3 id="age-header">Age</h3>
                             <div class="age-filter" id="filter-box-age">
                                 <ul>
@@ -122,212 +177,12 @@
                             <input type="text" placeholder="Search Mentor" class="mentor-search">
                         </div>
                     </div>
+                </div> -->
+        <div class="container-fluid donor-page">
 
-                </div>
-           
+            <div class="row justify-content-center">
 
-
-            
-                <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
-
-
-
-
-<!--------------------- end of form ------------------------------------>
-
-
-
-
-
-
-
-                <!-- --------------------- END OF FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
-
-                <div class="col-8 projectlist">
-
-                    <div id="project-list">
-
-
-                        <!-- Button to open the new project modal and generate new projects -->
-<br>
-<button type="button" class="btn btn-outline-success btn-lg btn-block" onclick="document.getElementById('id01').style.display='block'">Create New Project</button> 
-
-
-                        <!-- Javascript. This is where the mentor projects to choose from appear -->
-                    
-
-
-                    <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
-                    <div class="project-group">
-                            <div style="width: 12rem; border:1px green; margin:3%;" class="card">
-                              <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/28/11/basketball-1.jpg?w968h681" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Entertainment</h4>
-                                <h5 class="activity-title">Entertainment</h5>
-                                <p class="card-text">Celebrity Basketball Game...</p>
-                              </div>
-                              <div class="card-footer">
-                                    <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Mentor</a>
-                                    <a href="#" style="margin:1%" class="btn btn-primary stretched-link">Donate</a>
-                                    <br>
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                              </div>
-                            </div>
-
-                            <!-- END of Project Sample -->
-
-
-
-
-
-
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">FMLY</span>
-    <form class="modal-content">
-
-    
-    
-    <section class="testimonial py-5" id="testimonial">
-    <div class="container">
-    <div class="row ">
-    <div class="col-md-4 py-5 bg-primary text-white text-center ">
-    <div class=" ">
-        <div class="card-body">
-            <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
-            <h2 class="py-3">New Project</h2>
-            <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.
-    
-    </p>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-8 py-5 border">
-    <h4 class="pb-4">Please Complete Project Creation</h4>
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-              <input id="nameInput" name="Project Name" placeholder="Project Name" class="form-control" type="text">
-            </div>
-            <div class="form-group col-md-6">
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Mentor Email">
-            </div>
-          </div>
-        <div class="form-row">    
-            <div class="form-group col-md-6">
-                    <select id="inputEducation" class="form-control">
-                            <option selected>Choose Education Level...</option>
-                            <option>Elementary School</option>
-                            <option>Middle School</option>
-                            <option>High School</option>
-                            <option>College</option>
-                          </select>
-            </div>
-            <div class="form-group col-md-6">
-                      
-                      <select id="inputLocation" class="form-control">
-                        <option selected>Choose Location ...</option>
-                        <option>Los Angeles</option>
-                        <option>Orange County</option>
-                        <option>Ventura County</option>
-                        <option> Inland Empire</option>
-                      </select>
-    
-    
-            <div class="form-group col-md-12"></div>
-                      <!-- <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea> -->
-            </div>
-    
-            
-            <div class="form-row">    
-                    <div class="form-group col-md-6">
-                            <select placeholder="Choose Activities..." id="inputActivity" class="form-control">
-                                    <option name="Choose Activities...">Choose Activities...</option>
-                                    <option name="DIY Projects">DIY Projects</option>
-                                    <option>Entertainment</option>
-                                    <option>Education</option>
-                                    <option>Volunteer</option>
-                                  </select>
-                    </div>
-    
-
-                    <div class="form-row">   
-
-                    <div class="form-group col-md-6">
-                              
-                            <input style="width:100%" type="text" class="form-control" id="inputRange" placeholder="$ Goal">
-                        </div>
-                              <!-- <select id="inputRange" class="form-control">
-                                <option selected>Choose $ Range ...</option>
-                                <option>$1 - $10</option>
-                                <option>$10 - $50</option>
-                                <option>$50 - $100</option>
-                                <option>$100+</option>
-                              </select> -->
-                            </div>
-    
-
-
-
-
-
-
-
-                            <div class="form-row"> 
-    
-                                    <div class="form-group col-md-12"></div>
-                                    <textarea placeholder="Project Details" id="projectDetails" name="comment"  style="margin:3%" cols="40" rows="5" class="form-control"></textarea>
-                          </div>
-                          
-    
-        <div class="form-row">
-            <div class="form-group">
-                <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                      <label class="form-check-label" for="invalidCheck2">
-                        <small>By clicking Submit, you agree to our Terms & Conditions, Visitor Agreement and Privacy Policy.</small>
-                      </label>
-                    </div>
-                  </div>
-        
-              </div>
-        </div>
-    
-    </div>
-        
-        <div class="form-row">
-    
-            <div class="clearfix">
-                    <button id="submitBTN" type="submit" class="btn btn-success">Submit</button>
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                      class="btn btn-danger" >Cancel</button>
-                  </div>
-        
-        </div>
-    </form>
-    
-    </div>
-    </div>
-    </div> 
-    </section>
-
-
-
-
-<!-- DONATION CART - START -->
-
-
-    </div>
-    </form>
-    </div>
-
-
-
-                </div>
-                </div>
-
-                <div class="col-2 donation-cart ">
+                <div class="col-sm-2 donation-cart ">
                     <div class="text-center">
                         <h3>Donation Cart</h3>
                     </div>
@@ -342,19 +197,321 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="col-10 projectlist">
+
+                    <div id="project-list">
+                        <!-- Javascript. This is where the mentor projects to choose from appear -->
+
+                        <div class="container projectListInput text-center">
+                            <!--Stores JC Code In Middle Section-->
+                            <!-- --------------------- FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
+
+                            <!-- Sample HTML for projects - All infor stored and pulled from Firebase will be presented in this format -->
+                            <div class="project-group" id="card-container">
+
+
+                                <div class="wrapper actCardWrapper ">
+                                    <div style="width: 17rem; height: 30rem; margin:3%;" class="card enterainment-act">
+                                        <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-goal">GOAL: $25.00</h4>
+                                            <hr>
+                                            <!-- <h5 class="card-title">Entertainment</h5> -->
+                                            <p class="card-text">Celebrity Basketball Game</p>
+                                            <hr>
+                                            <p class="actDescription">Mentee's favorite actor is playing. Money goes
+                                                towards my mentee's tix. I'm paying for
+                                                my tix.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <!-- <a href="#" style="margin:0%" 
+                                                class="btn btn-primary stretched-link">Mentor</a>  -->
+                                            <a href="#" style="margin:1%"
+                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper actCardWrapper ">
+                                    <div style="width: 17rem; height: 30rem; margin:3%;" class="card education-act">
+                                        <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-goal">GOAL: $100.00</h4>
+                                            <hr>
+                                            <!-- <h5 class="card-title">Entertainment</h5> -->
+                                            <p class="card-text">Intro To Coding Class</p>
+                                            <hr>
+                                            <p class="actDescription">Money goes towards 2 tix. Mentee extremely
+                                                interested in computers.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <!-- <a href="#" style="margin:0%" 
+                                                class="btn btn-primary stretched-link">Mentor</a>  -->
+                                            <a href="#" style="margin:1%"
+                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper actCardWrapper ">
+                                    <div style="width: 17rem; height: 30rem; margin:3%;" class="card diy-act">
+                                        <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-goal">GOAL: $50.00</h4>
+                                            <hr>
+                                            <!-- <h5 class="card-title">Entertainment</h5> -->
+                                            <p class="card-text">Teaching Mentee some Woodshop Skills</p>
+                                            <hr>
+                                            <p class="actDescription">Money goes towards wood to build a coffee table
+                                                from scratch.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <!-- <a href="#" style="margin:0%" 
+                                                class="btn btn-primary stretched-link">Mentor</a>  -->
+                                            <a href="#" style="margin:1%"
+                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper actCardWrapper ">
+                                    <div style="width: 17rem; height: 30rem; margin:3%;" class="card volunteer-act">
+                                        <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-goal">GOAL: $300.00</h4>
+                                            <hr>
+                                            <!-- <h5 class="card-title">Entertainment</h5> -->
+                                            <p class="card-text">Going to Disaster Zone for Week to Help Rebuild</p>
+                                            <p class="actDescription">Mentee has urge to help those in need. Money
+                                                covers gas, lunch, & hotel room for 1 ngt.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <!-- <a href="#" style="margin:0%" 
+                                                class="btn btn-primary stretched-link">Mentor</a>  -->
+                                            <a href="#" style="margin:1%"
+                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- Form to generate new projects -->
+
+                                <!-- Button to open the new project modal -->
+
+                                <!-- Create New Project button is being moved to Mentor Page -->
+                                <!-- <button type="button" class="btn btn-primary"
+                                    onclick="document.getElementById('id01').style.display='block'">Create New
+                                    Project</button> -->
+
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">FMLY</span>
+                                    <form class="modal-content" action="/action_page.php">
+
+
+
+                                        <!--  -->
+
+                                        <section class="testimonial py-5" id="testimonial">
+                                            <div class="container">
+                                                <div class="row ">
+                                                    <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                                                        <div class=" ">
+                                                            <div class="card-body">
+                                                                <img src="http://www.ansonika.com/mavia/img/registration_bg.svg"
+                                                                    style="width:30%">
+                                                                <h2 class="py-3">New Project</h2>
+                                                                <p>Tation argumentum et usu, dicit viderer evertitur te
+                                                                    has. Eu
+                                                                    dictas concludaturque usu, facete detracto patrioque
+                                                                    an per,
+                                                                    lucilius pertinacia eu vel.
+
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 py-5 border">
+                                                        <h4 class="pb-4">Please fill with project details</h4>
+                                                        <form>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <input id="nameInput" name="Project Name"
+                                                                        placeholder="Project Name" class="form-control"
+                                                                        type="text">
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <input type="email" class="form-control"
+                                                                        id="inputEmail4" placeholder="Mentor Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <select id="inputEducation" class="form-control">
+                                                                        <option selected>Choose Education Level...
+                                                                        </option>
+                                                                        <option>Elementary School</option>
+                                                                        <option>Middle School</option>
+                                                                        <option>High School</option>
+                                                                        <option>College</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+
+                                                                    <select id="inputLocation" class="form-control">
+                                                                        <option selected>Choose Location ...</option>
+                                                                        <option>Los Angeles</option>
+                                                                        <option>Orange County</option>
+                                                                        <option>Ventura County</option>
+                                                                        <option> Inland Empire</option>
+                                                                    </select>
+
+
+                                                                    <div class="form-group col-md-12"></div>
+                                                                    <!-- <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea> -->
+                                                                </div>
+
+
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <select id="inputActivity" class="form-control">
+                                                                            <option selected>Choose Activities...
+                                                                            </option>
+                                                                            <option>DIY Projects</option>
+                                                                            <option>Entertainment</option>
+                                                                            <option>Education</option>
+                                                                            <option>Volunteer</option>
+                                                                        </select>
+                                                                    </div>
+
+
+                                                                    <div class="form-group col-md-6">
+
+                                                                        <select id="inputRange" class="form-control">
+                                                                            <option selected>Choose $ Range ...</option>
+                                                                            <option>$1 - $10</option>
+                                                                            <option>$10 - $50</option>
+                                                                            <option>$50 - $100</option>
+                                                                            <option>$100+</option>
+                                                                        </select>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+
+                                                                        <div style: class="form-group col-md-12">Project
+                                                                            Details
+                                                                        </div>
+                                                                        <textarea id="projectDetails" name="comment"
+                                                                            cols="40" rows="5"
+                                                                            class="form-control"></textarea>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group">
+                                                                            <div class="form-group">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="invalidCheck2" required>
+                                                                                    <label class="form-check-label"
+                                                                                        for="invalidCheck2">
+                                                                                        <small>By clicking Submit, you
+                                                                                            agree to our
+                                                                                            Terms & Conditions, Visitor
+                                                                                            Agreement
+                                                                                            and Privacy Policy.</small>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row">
+                                                                    <button type="button" id="submitProject"
+                                                                        class="btn btn-danger">Submit</button>
+                                                                </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!--  -->
+                                        <p>By creating an account you agree to our <a href="#"
+                                                style="color:dodgerblue">Terms &
+                                                Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button"
+                                                onclick="document.getElementById('id01').style.display='none'"
+                                                class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signup">Sign Up</button>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+
+                            <!--------------------- end of form ------------------------------------>
+
+
+
+
+
+
+
+                            <!-- --------------------- END OF FILTER JAVASCRIPT FUNCTIONALITY -------------------------- -->
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
             </div>
         </div>
+    </div>
 
+    <!-- Google Map will be moved to About Us Page -->
+    <!-- <div type="container">
 
+        <iframe width="600" height="450" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFUYI_HzIwoAR6bkJFW5dd_o&key=..."
+            allowfullscreen></iframe>
 
+    </div> -->
 
-
-<!-- Google Maps Embedded File ---->
-
-        <!-- <iframe width="50" height="50" frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFUYI_HzIwoAR6bkJFW5dd_o&key=AIzaSyBXCTI1ROuoyeMpzgJidzqdtnkyAlI5dw4" allowfullscreen></iframe> -->
-
-<!-- Google Maps Embedded File  END ---->
 
 </body>
 
@@ -368,7 +525,15 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-    <!-- <script src="JavaScript/filter.js"></script> -->
-    <script src="JavaScript/JavaScript-trial.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>ScrollReveal({ duration: 1000 }).reveal('.template-navbar, .text-center')</script>
+<script>ScrollReveal({ duration: 1000 }).reveal('.filter-ddm')</script>
+<!-- <script>ScrollReveal({ duration: 1000 }).reveal('.container-fluid, donor-page.')</script> -->
+<script>ScrollReveal({ duration: 1000 }).reveal('.projectListInput')</script>
+<script>ScrollReveal({ duration: 1000 }).reveal('.actCardWrapper')</script>
+
+
+
 
 </html>
