@@ -95,7 +95,12 @@
 }
 .tabs .tab a:focus, a.tabs .tab a:focus.active {
   background: linear-gradient(-90deg, #18aadb3f, #bfbe7ee7);
+}
 
+  .googleMapsSection {
+    height: 400px;
+    margin-top: 4vw;
+    border-top: 4vw;
 }
 
 /* FOOTER */
@@ -104,7 +109,10 @@
   display: inline-block;
 }
 
-
+p {
+  font-weight: 500;
+  font-size: 130%;
+}
 
 
  /* HOVER CSS */

@@ -2,28 +2,30 @@
 
 body { 
     background: rgb(255, 255, 255) !important; 
-    max-height: 900px;
+    height: auto;
+    padding-bottom:50px;
 }
 
 
-.wrapper {
+.project-group .wrapper {
     margin-right:5px;
     margin-left: 5px;
+    margin-top: 50px;
 }
 
-.hero-unit_background-image {
+/* .hero-unit_background-image {
     position: absolute;
     z-index: -1;   
     width: 100%;
     height: 100%;
     background-image: url("../images/background/worlddots.jpg");
-    background-size: cover;
+    background-size: 100%;
     opacity: 0.10;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-  }
+  } */
 
 .template-navbar {
     color: black;
@@ -52,48 +54,76 @@ body {
 
 /* DONORS PAGE CSS */
 
-/* Filter Box */
-.filter-box {
-    /* font-size: 50px; */
-    /* font-weight: bolder; */
-    margin-top: 10px;
-    /* border-top: 1px solid #bfbe7e9f; */
-    /* border-bottom: 1px solid #bfbe7e9f; */
-    height: 550px;
+
+#filter-dropdowns h3 {
+font-size: 15px;
+color: rgb(112, 112, 112);
 }
 
-.filter h3 {
-    font-size: 15px;
-    margin-left: 40px;
+.filter-ddm {
+    display: inline-block;
 }
 
-.filter li {
-    font-size: 10px;
-    margin-left: 40px;
+.filter-ddm button {
+    background-color: #18aadb;
+    border: none;
+}
+.dropdown-item {
+font-size: 8px;
+}
+.dropdown-toggle {
+font-size: 10px;
+margin-top:5px;
+padding: 2px;
+}
+
+.desc-ddm .diy-ddtxt {
+    border: 1px solid green;
 
 }
-.filter li:hover {
-    color:#bfbe7e9f;
-    font-weight: bold;
-    cursor:pointer; 
+.desc-ddm .entertainment-ddtxt {
+    border: 1px solid red;
 
-}   
-.filter h3:hover {
-    font-weight: 900;
-    text-decoration: underline;
-    cursor:pointer; 
 }
-#filter-header:hover {
-    font-weight: 700;
-    text-decoration: underline;
-    cursor:pointer; 
+.desc-ddm .education-ddtxt {
+    border: 1px solid blue;
+ 
+
 }
+.desc-ddm .voluenter-ddtxt {
+    border: 1px solid yellow;
+
+}
+
 .mentor-search, .nonprofit-search {
     font-size: 10px;
-    border: 1px solid black;
-    margin-left: 40px;
+    border: 1px inset #18aadb;
+    text-align: center;
 
 }
+
+/* Filter Box */
+/* #filter-box-title { */
+    /* font-size: 50px; */
+    /* font-weight: bolder; */
+    /* margin-top: 10px; */
+    /* border-top: 1px solid #bfbe7e9f; */
+    /* border-bottom: 1px solid #bfbe7e9f; */
+    /* height: 550px;
+    margin-left: 0px; */
+/* } */
+
+
+
+
+/* .filter li {
+    font-size: 8px;
+    margin-left: -10px;
+    padding-left: 0px;
+
+} */
+
+
 
 /* Donation Cart Box */
 
@@ -136,77 +166,134 @@ body {
 /* Project List */
 
 #project-list {
-    height: 600px;
-    margin-top:10px;
+    min-height: 600px;
+    max-height: auto;
+    margin-top: 10px;
     /* background-color:rgba(236, 236, 236, 0.25); */
-    border-right: 2px solid #18aadb49;
+    border-right: 2px solid #21ABDA;
     border-left: 2px solid #bfbe7e9f;
     background-image: linear-gradient(-90deg, #18aadb10, #bfbe7e1a);    
+}
 
 
+/* Activity Card */
 
+#card-container img{
+    border-radius: 50%;
+    height: 16rem;
+    position: inherit;
+    overflow: auto;
+    margin-top:-70px;
+    padding-top: 10px;
+}
+
+.card-body {
+    margin-top: -50px;
+}
+
+.actCardWrapper {
+    padding-top:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.enterainment-act {
+border: 3px solid red;
+}
+
+.education-act {
+    border: 3px solid blue;
+
+}
+
+.diy-act {
+    border: 3px solid green;
+
+}
+
+.volunteer-act {
+    border: 3px solid yellow;
+
+}
+
+#card-container .wrapper {
+    display: inline-block;
+
+}
+
+.card-body {
+    height: 250px;
+}
+
+.card-body .card-text {
+    font-weight: bold;
+}
+
+.card-body .actDescription {
+    font-size: 15px;
+}
+
+.project-group {
+    display: inline;
+}
+
+/* HOVER */
+
+.filter li:hover {
+    color:#bfbe7e9f;
+    font-weight: bold;
+    cursor:pointer; 
+
+}   
+.filter h3:hover {
+    font-weight: 900;
+    text-decoration: underline;
+    cursor:pointer; 
+}
+#filter-header:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor:pointer; 
+}
+
+.dropdown-item:hover {
+color: white;
+background-image: linear-gradient(-90deg, #18aadbad, #bfbe7ebe);    
+}
+
+.dropdown button:hover {
+    background-image: linear-gradient(-90deg, #18aadbad, #bfbe7ebe);    
+}
 
 /* Donor Media Queries */
 /* GOAL IS TO MAKE THE FILTER DISAPEAR AND HAVE THE FEED SPAN COL-11 */
 /* SMALLEST SIZE SHOULD HAVE FEED SPAN COL-12 AND DONATION BELOW */
 /* 705px smallest with all columns */
-@media screen and (max-width: 1000px) {
-.filter h3, .filter li, .mentor-search, .nonprofit-search  {
-    margin-left: 1px;
-}
-.mentor-search, .nonprofit-search {
-    width: 100px;
-}
-
-.donation-total p {
-    font-size: 12px;
-}
-#donationCartItems {
-    font-size: 10px;
-}
-#donationTotal {
-    font-size:20px;
-}
-.wrapper {
-    margin-right:0px;
-    margin-left:0px;
-}
-.donation-cart h3 {
-    font-size: 20px;
-}
-}
 
 
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+
+    .donation-cart h3 { 
+        font-size: 110%;
+    }
+
+    #donationCartItems {
+        font-size: 75%;
+    }
+    .donation-total p { 
+        font-size: 100%;
+    }
+    #donationTotal {
+        font-size: 120%;
+    }
+    .donation-cart-list {
+        /* margin-top: 10px; */
+        /* border-top: 1px solid #18aadb79; */
+        /* display: none; */
+    }
+
+
+
+    }
     
-}} */
-
-/* @media screen and (max-width: 800px) {
-    .filter-box  {
-        
-}
-    .donation-cart  {
-        
-}
-    .project-list  {
-
-    }} */
-
-/* }
-@media screen and (max-width: 800px) {
-    
-}} */
-
-
-/*
-@media screen and (max-width: 750px) {
-    .filter-box  {
-    display: none;    
-}}
-
-@media screen and (max-width: 750px) {
-    .project-list  {
-        width: 90%;
-}} */
-
