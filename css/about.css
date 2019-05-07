@@ -109,7 +109,10 @@
   display: inline-block;
 }
 
-
+p {
+  font-weight: 500;
+  font-size: 130%;
+}
 
 
  /* HOVER CSS */
