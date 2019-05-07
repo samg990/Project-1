@@ -166,10 +166,20 @@
                 <h4 class="blue-text text-lighten-2">FIND A NON-PROFIT <br> TO REGISTER WITH, NEAR YOU!</h4>
                 <h6>(Each Mentor is Registered under <br> a local Non-profit)</h6>
 
-                <div class="input-field">
+                <!-- <div class="input-field">
                     <i class="material-icons prefix">place</i>
                     <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
                     <label for="text">Your Address</label>
+                </div> -->
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Materialize Select</label>
                 </div>
             </div>
             <div class="col s6">
@@ -327,7 +337,10 @@
         ScrollReveal({ duration: 2000 }).reveal('.googleMapsSection')
         ScrollReveal({ duration: 2000 }).reveal('#Donor-tab')
 
-
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
 
     </script>
 
