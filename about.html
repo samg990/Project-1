@@ -46,21 +46,21 @@
 
         <nav class="nav-wrapper transparent">
             <div class="container ">
-                <a href="" class="brand-logo white-text">F M L Y</a>
+                <a href="index.html" class="brand-logo white-text">F M L Y</a>
                 <a href="" class="sidenav-trigger" data-target="mobile-menu"><i
                         class="material-icons white-text">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text about-sections ">
                     <li><a href="#mission">| About FMLY |</a></li>
-                    <li><a href="#">| Meet the FMLY founders |</a></li>
+                    <!-- <li><a href="#">| Meet the FMLY founders |</a></li> -->
                     <li><a href="#involved">| Get Involved |</a></li>
-                    <li><a href="#">| Partnerships |</a></li>
+                    <li><a href="#involved">| Partnerships |</a></li>
                     <li><a href="#contact-us">| Contact |</a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#mission">About FMLY</a></li>
-                    <li><a href="#">Meet the FMLY founders</a></li>
+                    <!-- <li><a href="#">Meet the FMLY founders</a></li> -->
                     <li><a href="#involved">Get Involved</a></li>
-                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#involved">Partnerships</a></li>
                     <li><a href="#contact-us">Contact</a></li>
                 </ul>
 
@@ -145,7 +145,7 @@
             </div>
         </div>
     </div>
-    <hr>
+
     <div class="container googleMapsSection">
         <div class="row ">
             <div class="col s4 center-align ">
@@ -299,6 +299,19 @@
             $(".tooltipped").tooltip();
         });
     </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal({ duration: 2000 }).reveal('.header head-photo')
+        ScrollReveal({ duration: 2000 }).reveal('.nav-wrapper')
+        ScrollReveal({ duration: 2000 }).reveal('.col')
+        ScrollReveal({ duration: 2000 }).reveal('.googleMapsSection')
+
+
+
+    </script>
+
 </body>
 
 
