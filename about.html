@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body onload="initMap();">
 
     <header class="header head-photo">
         <style>
@@ -172,6 +172,7 @@
                     <label for="text">Your Address</label>
                 </div> -->
 
+
                 <div class="input-field col s6">
                     <select>
                         <option value="" disabled selected>Choose your option</option>
@@ -182,10 +183,17 @@
                     <label>Materialize Select</label>
                 </div>
             </div>
-            <div class="col s6">
+            
+            <div class="col s6 push-s2">
+                    <div id="floating-panel">
+                            <input id="address" type="textbox" value="Los Angeles">
+                            <input id="submit" type="button" value="Geocode">
+                          </div>
+                         
+                          <div id="map" style="position: relative; overflow: hidden; height: 300px; width: 450px;"></div>
 
             </div>
-            <h1 class="center-align red-text">GOOGLE MAPS <br>GOES HERE<br>---</h1>
+            
 
         </div>
     </div>
@@ -345,6 +353,9 @@
     </script>
 
 </body>
-
+<script src="JavaScript/map.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE&callback=initMap">
+</script>
 
 </html>
