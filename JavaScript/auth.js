@@ -36,6 +36,7 @@ $(document).ready(function () {
         firstname: $('#firstname').val(),
         lastname: $('#lastname').val(),
         bio: $('#aboutMe').val(),
+        nonProfit: $('#organization').val(),
       }).then(() => {
         window.location = 'mentorpg.html';
       })
