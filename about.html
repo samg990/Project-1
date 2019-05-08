@@ -185,20 +185,12 @@
                     </option>
                 </select>
             </div>
-            <script>
-                $(document).ready(function () {
-                    $("loc-dropdown").change(function () {
-                        var displayaddress = $("#loc-dropdown option:selected").value();
-                        console.log(displayaddress);
-                        // $("#googleSearchBar").val(displayaddress)
-                    })
-                });
-            </script>
+
 
             <!-- GOOGLE MAPS map -->
             <div class="col s6 push-s2">
                 <div id="floating-panel googleSearchBar">
-                    <input id="address" type="textbox" value="" id="">
+                    <input id="address" type="textbox" value="">
                 </div>
                 <div>
                     <input id="submit" type="button" value="Search">
@@ -207,9 +199,27 @@
                 <div id="map" style="position: relative; overflow: hidden; height: 300px; width: 450px;"></div>
             </div>
 
-            <!-- Javascript to take dropdown selection and input it into google search -->
             <script>
-                // if option 1 selected, enter "2830 S Central Ave, Los Angeles, CA 90011" in #googleSearchBar
+                // $("loc-dropdown").change(function () {
+                //     var displayaddress = $("#loc-dropdown option:selected").value();
+                //     console.log(displayaddress);
+                //     // $("#googleSearchBar").val(displayaddress)
+                // })
+
+                // $("select")
+                //     .change(function () {
+                //         var str = "";
+                //         $("select option:selected").each(function () {
+                //             str += $(this).text();
+                //         });
+                //         $("#address").text(str);
+                //     });
+                // .change();
+            </script>
+
+            <!-- Javascript to take dropdown selection and input it into google search -->
+            <!-- <script> -->
+            <!-- // if option 1 selected, enter "2830 S Central Ave, Los Angeles, CA 90011" in #googleSearchBar
                 // if option 3 selected, enter "510 S Hewitt St, Los Angeles, CA 90013" in #googleSearchBar
                 // if option 2 selected, enter "1927 E 2nd St, Los Angeles, CA 90033" in #googleSearchBar
 
@@ -218,9 +228,9 @@
                 //     var mapAddress = $(':selected', this).data('id');
                 //     //populate the rate.
                 //     $("#loc-dropdown").val("#googleSearchBar");
-                // });
+                // }); -->
 
-            </script>
+            <!-- </script> -->
 
         </div>
     </div>

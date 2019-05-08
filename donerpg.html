@@ -195,6 +195,8 @@
                             $0.00
                             <!-- Javascript. This is where the Cart total diplays -->
                         </p>
+                        <button class="submitDonation">Pay Now</button>
+
                     </div>
                 </div>
 
@@ -228,11 +230,44 @@
                                         <div class="card-footer">
                                             <!-- <a href="#" style="margin:0%" 
                                                 class="btn btn-primary stretched-link">Mentor</a>  -->
-                                            <a href="#" style="margin:1%"
-                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <a href="#" style="margin:1%" class="btn btn-primary stretched-link"
+                                                id="donDonBtn" data-toggle="modal"
+                                                data-target="#donDonate">Donate</a><br>
                                             <small class="text-muted">Last updated 3 mins ago</small>
 
                                         </div>
+
+                                        <!-- -----------------ADD DON DONATE MODAL BEGINS--------------------- -->
+                                        <div class="modal fade" id="donDonate" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">How Much Would you Like to Donate
+                                                            towards this Activity?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Add amount of Donation</p>
+                                                        <form action="">
+                                                            <textarea class="donDonAmount">$</textarea>
+
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button submit"
+                                                            class="btn btn-success">Submit</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- -------------------------------------- -->
+
                                     </div>
                                 </div>
 
@@ -252,8 +287,9 @@
                                         <div class="card-footer">
                                             <!-- <a href="#" style="margin:0%" 
                                                 class="btn btn-primary stretched-link">Mentor</a>  -->
-                                            <a href="#" style="margin:1%"
-                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <a href="#" style="margin:1%" class="btn btn-primary stretched-link"
+                                                id="donDonBtn" data-toggle="modal"
+                                                data-target="#donDonate">Donate</a><br>
                                             <small class="text-muted">Last updated 3 mins ago</small>
                                         </div>
                                     </div>
@@ -269,14 +305,16 @@
                                             <!-- <h5 class="card-title">Entertainment</h5> -->
                                             <p class="card-text">Teaching Mentee some Woodshop Skills</p>
                                             <hr>
-                                            <p class="actDescription">Money goes towards wood to build a coffee table
+                                            <p class="actDescription">Money goes towards wood to build a coffee
+                                                table
                                                 from scratch.</p>
                                         </div>
                                         <div class="card-footer">
                                             <!-- <a href="#" style="margin:0%" 
                                                 class="btn btn-primary stretched-link">Mentor</a>  -->
-                                            <a href="#" style="margin:1%"
-                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <a href="#" style="margin:1%" class="btn btn-primary stretched-link"
+                                                id="donDonBtn" data-toggle="modal"
+                                                data-target="#donDonate">Donate</a><br>
                                             <small class="text-muted">Last updated 3 mins ago</small>
                                         </div>
                                     </div>
@@ -297,8 +335,9 @@
                                         <div class="card-footer">
                                             <!-- <a href="#" style="margin:0%" 
                                                 class="btn btn-primary stretched-link">Mentor</a>  -->
-                                            <a href="#" style="margin:1%"
-                                                class="btn btn-primary stretched-link">Donate</a><br>
+                                            <a href="#" style="margin:1%" class="btn btn-primary stretched-link"
+                                                id="donDonBtn" data-toggle="modal"
+                                                data-target="#donDonate">Donate</a><br>
                                             <small class="text-muted">Last updated 3 mins ago</small>
                                         </div>
                                     </div>
@@ -344,9 +383,11 @@
                                                                 <img src="http://www.ansonika.com/mavia/img/registration_bg.svg"
                                                                     style="width:30%">
                                                                 <h2 class="py-3">New Project</h2>
-                                                                <p>Tation argumentum et usu, dicit viderer evertitur te
+                                                                <p>Tation argumentum et usu, dicit viderer evertitur
+                                                                    te
                                                                     has. Eu
-                                                                    dictas concludaturque usu, facete detracto patrioque
+                                                                    dictas concludaturque usu, facete detracto
+                                                                    patrioque
                                                                     an per,
                                                                     lucilius pertinacia eu vel.
 
@@ -382,7 +423,8 @@
                                                                 <div class="form-group col-md-6">
 
                                                                     <select id="inputLocation" class="form-control">
-                                                                        <option selected>Choose Location ...</option>
+                                                                        <option selected>Choose Location ...
+                                                                        </option>
                                                                         <option>Los Angeles</option>
                                                                         <option>Orange County</option>
                                                                         <option>Ventura County</option>
@@ -411,7 +453,8 @@
                                                                     <div class="form-group col-md-6">
 
                                                                         <select id="inputRange" class="form-control">
-                                                                            <option selected>Choose $ Range ...</option>
+                                                                            <option selected>Choose $ Range ...
+                                                                            </option>
                                                                             <option>$1 - $10</option>
                                                                             <option>$10 - $50</option>
                                                                             <option>$50 - $100</option>
@@ -421,7 +464,8 @@
 
                                                                     <div class="form-row">
 
-                                                                        <div style: class="form-group col-md-12">Project
+                                                                        <div style: class="form-group col-md-12">
+                                                                            Project
                                                                             Details
                                                                         </div>
                                                                         <textarea id="projectDetails" name="comment"
@@ -438,11 +482,14 @@
                                                                                         id="invalidCheck2" required>
                                                                                     <label class="form-check-label"
                                                                                         for="invalidCheck2">
-                                                                                        <small>By clicking Submit, you
+                                                                                        <small>By clicking Submit,
+                                                                                            you
                                                                                             agree to our
-                                                                                            Terms & Conditions, Visitor
+                                                                                            Terms & Conditions,
+                                                                                            Visitor
                                                                                             Agreement
-                                                                                            and Privacy Policy.</small>
+                                                                                            and Privacy
+                                                                                            Policy.</small>
                                                                                     </label>
                                                                                 </div>
                                                                             </div>

@@ -77,6 +77,7 @@ margin-top:5px;
 padding: 2px;
 }
 
+
 .desc-ddm .diy-ddtxt {
     border: 1px solid green;
 
@@ -101,6 +102,7 @@ padding: 2px;
     text-align: center;
 
 }
+
 
 /* Filter Box */
 /* #filter-box-title { */
@@ -163,6 +165,16 @@ padding: 2px;
     text-decoration: none;
 }
 
+.submitDonation {
+    font-size: 10px;
+    text-decoration: none;
+    margin-top:0px;
+    background-color: green;
+    font-weight: 900;
+    color: white;
+    border: 1px solid black;
+    border-radius: 05%;
+}
 /* Project List */
 
 #project-list {
