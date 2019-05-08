@@ -277,6 +277,10 @@ background-image: linear-gradient(-90deg, #18aadbad, #bfbe7ebe);
     background-image: linear-gradient(-90deg, #18aadbad, #bfbe7ebe);    
 }
 
+#actMentor:hover {
+    background-image: linear-gradient(-90deg, #18aadb3b, #bfbe7e4f);    
+}
+
 /* Donor Media Queries */
 /* GOAL IS TO MAKE THE FILTER DISAPEAR AND HAVE THE FEED SPAN COL-11 */
 /* SMALLEST SIZE SHOULD HAVE FEED SPAN COL-12 AND DONATION BELOW */

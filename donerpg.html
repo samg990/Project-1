@@ -200,6 +200,26 @@
                     </div>
                 </div>
 
+                <!-- PROFILE BIO MODAL -->
+                <div class="modal fade modal-lg" id="mentorBio" tabindex="-1" role="dialog" width="800px"
+                    height="800px">
+                    <div class="modal-dialog custom-class" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Hi! I'm #NameGoesHere!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="profile-Bio"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-10 projectlist">
 
                     <div id="project-list">
@@ -216,7 +236,7 @@
                                 <div class="wrapper actCardWrapper ">
                                     <div style="width: 17rem; height: 30rem; margin:3%;" class="card enterainment-act">
                                         <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
-                                            alt="Card image cap">
+                                            alt="Card image cap" data-toggle="modal" data-target="#mentorBio">
                                         <div class="card-body">
                                             <h4 class="card-goal">GOAL: $25.00</h4>
                                             <hr>
@@ -252,8 +272,8 @@
                                                     <div class="modal-body">
                                                         <p>Add amount of Donation</p>
                                                         <form action="">
-                                                            <textarea class="donDonAmount">$</textarea>
-
+                                                            <label>$</label>
+                                                            <input type="text" class="donDonAmount">
                                                         </form>
                                                     </div>
                                                     <div class="modal-footer">
@@ -274,7 +294,7 @@
                                 <div class="wrapper actCardWrapper ">
                                     <div style="width: 17rem; height: 30rem; margin:3%;" class="card education-act">
                                         <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
-                                            alt="Card image cap">
+                                            alt="Card image cap" data-toggle="modal" data-target="#mentorBio">
                                         <div class="card-body">
                                             <h4 class="card-goal">GOAL: $100.00</h4>
                                             <hr>
@@ -298,7 +318,7 @@
                                 <div class="wrapper actCardWrapper ">
                                     <div style="width: 17rem; height: 30rem; margin:3%;" class="card diy-act">
                                         <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
-                                            alt="Card image cap">
+                                            alt="Card image cap" data-toggle="modal" data-target="#mentorBio">
                                         <div class="card-body">
                                             <h4 class="card-goal">GOAL: $50.00</h4>
                                             <hr>
@@ -323,7 +343,7 @@
                                 <div class="wrapper actCardWrapper ">
                                     <div style="width: 17rem; height: 30rem; margin:3%;" class="card volunteer-act">
                                         <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
-                                            alt="Card image cap">
+                                            alt="Card image cap" data-toggle="modal" data-target="#mentorBio">
                                         <div class="card-body">
                                             <h4 class="card-goal">GOAL: $300.00</h4>
                                             <hr>
