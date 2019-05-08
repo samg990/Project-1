@@ -20,6 +20,9 @@
 
     <!-- Doner Page CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/donor.css">
+    <!-- Fonts Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Javascript for Filter Functionality -->
     <script src="JavaScript/donor.js"></script>
@@ -195,7 +198,7 @@
                             $0.00
                             <!-- Javascript. This is where the Cart total diplays -->
                         </p>
-                        <button class="submitDonation">Pay Now</button>
+                        <button class="submitDonation" data-toggle="modal" data-target="#donorCCPay">Pay Now</button>
 
                     </div>
                 </div>
@@ -287,7 +290,95 @@
                                         </div>
 
                                         <!-- -------------------------------------- -->
+                                        <!-- PAYMENT METHODO -->
 
+
+                                        <div class="modal fade modal-lg" id="donorCCPay" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content paymentInfo">
+                                                    <h3>Billing Address</h3>
+                                                    <label for="fname"><i class="fa fa-user"></i>
+                                                        Full
+                                                        Name</label>
+                                                    <input type="text" id="fname" name="firstname"
+                                                        placeholder="John M. Doe">
+                                                    <label for="email"><i class="fa fa-envelope"></i>
+                                                        Email</label>
+                                                    <input type="text" id="email" name="email"
+                                                        placeholder="john@example.com">
+                                                    <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                        Address</label>
+                                                    <input type="text" id="adr" name="address"
+                                                        placeholder="542 W. 15th Street">
+                                                    <label for="city"><i class="fa fa-institution"></i>
+                                                        City</label>
+                                                    <input type="text" id="city" name="city" placeholder="New York">
+                                                    <label for="state">State</label>
+                                                    <input type="text" id="state" name="state" placeholder="NY">
+
+                                                    <label for="zip">Zip</label>
+                                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                                    <h3>Payment</h3>
+                                                    <label for="fname">Accepted Cards</label>
+                                                    <div class="icon-container">
+                                                        <i class="fa fa-cc-visa" style="color:navy;">visa</i>
+                                                        <i class="fa fa-cc-amex" style="color:blue;">amex</i>
+                                                        <i class="fa fa-cc-mastercard" style="color:red;">mastercard</i>
+                                                        <i class="fa fa-cc-discover" style="color:orange;">discover</i>
+                                                    </div>
+                                                    <label for="cname">Name on Card</label>
+                                                    <input type="text" id="cname" name="cardname"
+                                                        placeholder="John More Doe">
+                                                    <label for="ccnum">Credit card
+                                                        number</label>
+                                                    <input type="text" id="ccnum" name="cardnumber"
+                                                        placeholder="1111-2222-3333-4444">
+                                                    <label for="expmonth">Exp Month</label>
+                                                    <input type="text" id="expmonth" name="expmonth"
+                                                        placeholder="September">
+
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <label for="expyear">Exp
+                                                                Year</label>
+                                                            <input type="text" id="expyear" name="expyear"
+                                                                placeholder="2018">
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <label for="cvv">CVV</label>
+                                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                                        </div>
+                                                    </div>
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="sameadr">
+                                                        Shipping address same as billing
+                                                    </label>
+                                                    <div class="checkoutBtn">
+
+                                                        <input type="submit" value="Continue to checkout" class="btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <!-- <div class="container">
+                                                    <h4>Cart
+                                                        <span class="price" style="color:black">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <b>4</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                                                    <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                                                    <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                                                    <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                                                    <hr>
+                                                    <p>Total <span class="price" style="color:black"><b>$30</b></span>
+                                                    </p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!-- ------------------------------------- -->
                                     </div>
                                 </div>
 
@@ -301,7 +392,8 @@
                                             <!-- <h5 class="card-title">Entertainment</h5> -->
                                             <p class="card-text">Intro To Coding Class</p>
                                             <hr>
-                                            <p class="actDescription">Money goes towards 2 tix. Mentee extremely
+                                            <p class="actDescription">Money goes towards 2 tix. Mentee
+                                                extremely
                                                 interested in computers.</p>
                                         </div>
                                         <div class="card-footer">
@@ -325,7 +417,8 @@
                                             <!-- <h5 class="card-title">Entertainment</h5> -->
                                             <p class="card-text">Teaching Mentee some Woodshop Skills</p>
                                             <hr>
-                                            <p class="actDescription">Money goes towards wood to build a coffee
+                                            <p class="actDescription">Money goes towards wood to build a
+                                                coffee
                                                 table
                                                 from scratch.</p>
                                         </div>
@@ -348,8 +441,10 @@
                                             <h4 class="card-goal">GOAL: $300.00</h4>
                                             <hr>
                                             <!-- <h5 class="card-title">Entertainment</h5> -->
-                                            <p class="card-text">Going to Disaster Zone for Week to Help Rebuild</p>
-                                            <p class="actDescription">Mentee has urge to help those in need. Money
+                                            <p class="card-text">Going to Disaster Zone for Week to Help
+                                                Rebuild</p>
+                                            <p class="actDescription">Mentee has urge to help those in need.
+                                                Money
                                                 covers gas, lunch, & hotel room for 1 ngt.</p>
                                         </div>
                                         <div class="card-footer">
@@ -403,10 +498,12 @@
                                                                 <img src="http://www.ansonika.com/mavia/img/registration_bg.svg"
                                                                     style="width:30%">
                                                                 <h2 class="py-3">New Project</h2>
-                                                                <p>Tation argumentum et usu, dicit viderer evertitur
+                                                                <p>Tation argumentum et usu, dicit viderer
+                                                                    evertitur
                                                                     te
                                                                     has. Eu
-                                                                    dictas concludaturque usu, facete detracto
+                                                                    dictas concludaturque usu, facete
+                                                                    detracto
                                                                     patrioque
                                                                     an per,
                                                                     lucilius pertinacia eu vel.
@@ -416,7 +513,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-8 py-5 border">
-                                                        <h4 class="pb-4">Please fill with project details</h4>
+                                                        <h4 class="pb-4">Please fill with project details
+                                                        </h4>
                                                         <form>
                                                             <div class="form-row">
                                                                 <div class="form-group col-md-6">
@@ -432,7 +530,8 @@
                                                             <div class="form-row">
                                                                 <div class="form-group col-md-6">
                                                                     <select id="inputEducation" class="form-control">
-                                                                        <option selected>Choose Education Level...
+                                                                        <option selected>Choose Education
+                                                                            Level...
                                                                         </option>
                                                                         <option>Elementary School</option>
                                                                         <option>Middle School</option>
@@ -460,7 +559,8 @@
                                                                 <div class="form-row">
                                                                     <div class="form-group col-md-6">
                                                                         <select id="inputActivity" class="form-control">
-                                                                            <option selected>Choose Activities...
+                                                                            <option selected>Choose
+                                                                                Activities...
                                                                             </option>
                                                                             <option>DIY Projects</option>
                                                                             <option>Entertainment</option>
@@ -473,7 +573,8 @@
                                                                     <div class="form-group col-md-6">
 
                                                                         <select id="inputRange" class="form-control">
-                                                                            <option selected>Choose $ Range ...
+                                                                            <option selected>Choose $ Range
+                                                                                ...
                                                                             </option>
                                                                             <option>$1 - $10</option>
                                                                             <option>$10 - $50</option>
@@ -502,10 +603,12 @@
                                                                                         id="invalidCheck2" required>
                                                                                     <label class="form-check-label"
                                                                                         for="invalidCheck2">
-                                                                                        <small>By clicking Submit,
+                                                                                        <small>By clicking
+                                                                                            Submit,
                                                                                             you
                                                                                             agree to our
-                                                                                            Terms & Conditions,
+                                                                                            Terms &
+                                                                                            Conditions,
                                                                                             Visitor
                                                                                             Agreement
                                                                                             and Privacy
