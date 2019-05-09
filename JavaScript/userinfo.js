@@ -45,21 +45,81 @@ $(document).ready(function () {
 
     e.preventDefault();
 
+    if ($('#firstnameEdit').val() !== "" && $('#lastnameEdit').val() === "" && $('#mentorbio').val() === "") {
+      auth.onAuthStateChanged(user => {
+        db.collection("users")
+          .doc(user.uid)
+          .update({
+            firstname: $('#firstnameEdit').val(),
+          })
+          .then(function () {
+            console.log("Document successfully written!");
+            document.location.reload()
+          })
 
-    auth.onAuthStateChanged(user => {
-      db.collection("users")
-        .doc(user.uid)
-        .update({
-          firstname: $('#firstnameEdit').val(),
-          lastname: $('#lastnameEdit').val(),
-          bio: $('#mentorbio').val(),
-        })
-        .then(function() {
-          console.log("Document successfully written!");
-          document.location.reload()
-        })
+      })
+    } else if ($('#lastnameEdit').val() !== "" && $('#firstnameEdit').val() === "" && $('#mentorbio').val() === "") {
+      auth.onAuthStateChanged(user => {
+        db.collection("users")
+          .doc(user.uid)
+          .update({
+            lastname: $('#lastnameEdit').val(),
+          })
+          .then(function () {
+            console.log("Document successfully written!");
+            document.location.reload()
+          })
 
-    })
+      })
+    } else if ($('#mentorbio').val()!== "" && $('#lastnameEdit').val() === "" && $('#firstnameEdit').val() === "") {
+      auth.onAuthStateChanged(user => {
+        db.collection("users")
+          .doc(user.uid)
+          .update({
+            bio: $('#mentorbio').val(),
+          })
+          .then(function () {
+            console.log("Document successfully written!");
+            document.location.reload()
+          })
+
+      })
+    } else if ($('#mentorbio').val()=== "" && $('#lastnameEdit').val() !== "" && $('#firstnameEdit').val() !== "") {
+      auth.onAuthStateChanged(user => {
+        db.collection("users")
+          .doc(user.uid)
+          .update({
+            firstname: $('#firstnameEdit').val(),
+            lastname: $('#lastnameEdit').val(),
+          })
+          .then(function () {
+            console.log("Document successfully written!");
+            document.location.reload()
+          })
+
+      })
+    }
+    else {
+      auth.onAuthStateChanged(user => {
+        db.collection("users")
+          .doc(user.uid)
+          .update({
+            firstname: $('#firstnameEdit').val(),
+            lastname: $('#lastnameEdit').val(),
+            bio: $('#mentorbio').val(),
+          })
+          .then(function () {
+            console.log("Document successfully written!");
+            document.location.reload()
+          })
+
+      })
+
+
+
+
+
+    }
 
   });
 });
