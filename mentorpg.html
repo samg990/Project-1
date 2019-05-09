@@ -25,8 +25,8 @@
 
 
     <!-- PROFILE BIO MODAL -->
-    <div class="modal fade" id="mentorBio" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade modal-lg" id="mentorBio" tabindex="-1" role="dialog" width="800px" height="800px">
+        <div class="modal-dialog custom-class" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Hi! I'm #NameGoesHere!</h5>
@@ -139,7 +139,8 @@
                             <textarea class="form-control" id="mentorbio" rows="3"></textarea>
                         </div>
                         <div class="modal-footer">
-                            <button type="button submit" input type="submit" class="btn btn-success" id="submitbtn">Submit</button>
+                            <button type="button submit" input type="submit" class="btn btn-success"
+                                id="submitbtn">Submit</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                         </div>
                     </form>
@@ -148,6 +149,154 @@
             </div>
         </div>
     </div>
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">FMLY</span>
+        <form class="modal-content" action="/action_page.php">
+
+
+
+            <!--  -->
+
+            <section class="testimonial py-5" id="testimonial">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                            <div class=" ">
+                                <div class="card-body">
+                                    <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+                                    <h2 class="py-3">New Project</h2>
+                                    <p>Tation argumentum et usu, dicit viderer evertitur te
+                                        has. Eu
+                                        dictas concludaturque usu, facete detracto patrioque
+                                        an per,
+                                        lucilius pertinacia eu vel.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 py-5 border">
+                            <h4 class="pb-4">Please fill with project details</h4>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input id="nameInput" name="Project Name" placeholder="Project Name"
+                                            class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Mentor Email">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <select id="inputEducation" class="form-control">
+                                            <option selected>Choose Education Level...
+                                            </option>
+                                            <option>Elementary School</option>
+                                            <option>Middle School</option>
+                                            <option>High School</option>
+                                            <option>College</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+
+                                        <select id="inputLocation" class="form-control">
+                                            <option selected>Choose Location ...</option>
+                                            <option>Los Angeles</option>
+                                            <option>Orange County</option>
+                                            <option>Ventura County</option>
+                                            <option> Inland Empire</option>
+                                        </select>
+
+
+                                        <div class="form-group col-md-12"></div>
+                                        <!-- <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea> -->
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <select id="inputActivity" class="form-control">
+                                                <option selected>Choose Activities...
+                                                </option>
+                                                <option>DIY Projects</option>
+                                                <option>Entertainment</option>
+                                                <option>Education</option>
+                                                <option>Volunteer</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="form-group col-md-6">
+
+                                            <select id="inputRange" class="form-control">
+                                                <option selected>Choose $ Range ...</option>
+                                                <option>$1 - $10</option>
+                                                <option>$10 - $50</option>
+                                                <option>$50 - $100</option>
+                                                <option>$100+</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-row">
+
+                                            <div style: class="form-group col-md-12">Project
+                                                Details
+                                            </div>
+                                            <textarea id="projectDetails" name="comment" cols="40" rows="5"
+                                                class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="invalidCheck2" required>
+                                                        <label class="form-check-label" for="invalidCheck2">
+                                                            <small>By clicking Submit, you
+                                                                agree to our
+                                                                Terms & Conditions, Visitor
+                                                                Agreement
+                                                                and Privacy Policy.</small>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-row">
+                                        <button type="button" id="submitProject" class="btn btn-danger">Submit</button>
+                                    </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                    Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <button type="submit" class="signup">Sign Up</button>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <!--------------------- end of form ------------------------------------>
+
+
+
 
 
 
@@ -182,38 +331,76 @@
 
                 <div class="col-2 text-center" id="mentor-act-tabs">
                     <div class="float-profile-pic">
-                        <img id="profilePicture" class="profile-picture" src="images/people/mand4.jpg" alt="man-image"
+                        <img id="profilePicture" class="profile-picture" src="images/other/avatar.png" alt="man-image"
                             width="200" height="200" data-toggle="modal" data-target="#mentorBio">
                     </div>
+                    <div class="row">
+                        <div class="container col-12">
+                            <!-- LEFT TAB SECTION -->
+                            <div class="tab-section ">
+                                <!-- ADD PHOTO BUTTON -->
 
-                    <!-- LEFT TAB SECTION -->
-                    <div class="tab-section ">
-                        <!-- ADD PHOTO BUTTON -->
+                                <button type="button" class="mentor-button mb1" id="addPhotoButton" data-toggle="modal"
+                                    data-target="#addPhotoBtn">Add To Photo
+                                    Album</button><br>
+                                <!-- ADD POST BUTTON -->
 
-                        <button type="button" class="mentor-button mb1" id="addPhotoButton" data-toggle="modal"
-                            data-target="#addPhotoBtn">Add To Photo
-                            Album</button><br>
-                        <!-- ADD POST BUTTON -->
-
-                        <button class="mentor-button mb2" id="addPostButton" data-toggle="modal"
-                            data-target="#addpostbtn">Add Post</button><br>
-                        <!-- EDIT PROFILE BUTTON -->
-                        <button class="mentor-button mb3" id="editProfileButton" data-toggle="modal"
-                            data-target="#editProfbtn">Edit Profile</button><br>
+                                <button class="mentor-button mb2" id="addPostButton" data-toggle="modal"
+                                    data-target="#addpostbtn">Add Post</button><br>
+                                <!-- EDIT PROFILE BUTTON -->
+                                <button class="mentor-button mb3" id="editProfileButton" data-toggle="modal"
+                                    data-target="#editProfbtn">Edit Profile</button><br>
+                            </div>
+                            <div class="add-act-button text-center ">
+                                <!-- <button type="button" class="btn btn-primary"
+                            onclick="document.getElementById('id01').style.display='block'">Create New
+                            Project</button> -->
+                                <button class="btn btn-outline post-new"
+                                    onclick="document.getElementById('id01').style.display='block'"
+                                    id="postNewActButton" id="id01">
+                                    <h6>POST<br>NEW ACTIVITY</h6>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="add-act-button text-center ">
-                        <button class="btn btn-outline post-new" id="postNewActButton">
-                            <h6>POST<br>NEW ACTIVITY</h6>
-                        </button>
-                    </div>
-
                 </div>
 
+                <!-- Name Input Here -->
                 <div class="col-7" id="mentor-feed">
                     <div class="text-center" id="mentor-name"></div>
 
-                    <div id="feed-input">
-                        <div class="feedInput">
+                    <!-- FEED INPUT -->
+                    <div id="feed-input text-center">
+                        <div class="feedInput feed1">
+                            <div>
+                                <h6>Great News! Don from Covina donated $10 towards your Celebrity Basketball Game
+                                    activity!</h6>
+                            </div>
+                            <style>
+                                .feed1 {
+                                    height: 100px;
+                                    background: white;
+                                    padding: 2px;
+                                    border: 2px solid black;
+
+                                }
+
+                                .feedInput {
+                                    margin-top: 300px;
+                                }
+
+                                .feed1 h6 {
+                                    font-size: 20px;
+                                    text-align: start;
+                                    padding: 10px;
+                                }
+
+                                @media screen and (max-width: 1200px) {
+                                    .feed1 h6 {
+                                        font-size: 13px;
+                                    }
+                                }
+                            </style>
                             <h6 class="feedInputArea"></h6>
 
                         </div>
@@ -224,9 +411,73 @@
                 </div>
 
 
-                <div class="col-3" id="project-status">
+                <div class="col-3 text-center" id="project-status">
                     <div id="status-input">
                         <!-- Javascript. This is where the PROJECT STATUS charts are appended -->
+                        <!-- Sample Status bars -->
+                        <div class="container-fluid">
+                            <h5>Celebrity Basketball Game</h5>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="progress-bar ">
+                                        <div class="progress-bar-value">
+                                            <div class="progress-bar-fill-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="container-fluid">
+                            <h5>Coding Lecture</h5>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="progress-bar ">
+                                        <div class="progress-bar-value">
+                                            <div class="progress-bar-fill-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <style>
+                            .progress-bar {
+                                height: 200px;
+                                width: 100px;
+                                border: 3px solid black;
+                                position: relative;
+                                background: rgb(0, 196, 0);
+                            }
+
+                            .progress-bar-value {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%
+                            }
+
+                            .progress-bar-fill-1 {
+                                height: 50px;
+                                width: 94px;
+                                background: #F5F5F5;
+                                border-bottom: 1px solid black;
+                            }
+
+                            .progress-bar-fill-2 {
+                                height: 175px;
+                                width: 94px;
+                                background: #F5F5F5;
+                                border-bottom: 1px solid black;
+                            }
+                        </style>
+
+                        <div class="container col-3">
+
+                        </div>
+
                     </div>
                 </div>
 

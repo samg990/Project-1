@@ -55,6 +55,11 @@ body {
     /* font-style: italic; */
 }
 
+/* Mentor Bio Modal  */
+body #mentorBio {
+    width: 800px;
+}
+
 /* MENTORS PAGE CSS */
 
 body {
@@ -239,6 +244,6 @@ body {
             -webkit-text-stroke: 1px white;
 
         }
-
+     
         
     }
