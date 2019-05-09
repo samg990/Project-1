@@ -1,6 +1,6 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDUocsfxxFDln7Mx1k-wpn_mtmb0mjVIwc",
+  apiKey: "AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE",
   authDomain: "test1-ebe40.firebaseapp.com",
   databaseURL: "https://test1-ebe40.firebaseio.com",
   projectId: "test1-ebe40",
