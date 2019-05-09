@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBXpm4owlDd5Lh937ObtnvNHZ_2vDAk5VI",
+    apiKey: "AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE",
     authDomain: "projectfamly.firebaseapp.com",
     databaseURL: "https://projectfamly.firebaseio.com",
     projectId: "projectfamly",
