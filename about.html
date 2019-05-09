@@ -26,7 +26,6 @@
 
 </head>
 
-
 <body onload="initMap();">
 
     <header class="header head-photo">
@@ -160,7 +159,7 @@
             </div>
         </div>
     </div>
-    <hr>
+
     <div class="container googleMapsSection">
         <div class="row ">
             <div class="col s4 center-align ">
@@ -174,63 +173,28 @@
                 </div> -->
 
 
-
                 <label>Registered Non-Profits</label>
                 <select class="browser-default" id="loc-dropdown">
                     <option value="" disabled selected>Select Non-profit</option>
-                    <option value="1" data-id="2830 S Central Ave, Los Angeles, CA 90011">A Place Called Home
+                    <option  value="2830 S Central Ave, Los Angeles, CA 90011">A Place Called Home
                     </option>
-                    <option value="2" data-id="510 S Hewitt St, Los Angeles, CA 90013">Step Up</option>
-                    <option value="3" data-id="1927 E 2nd St, Los Angeles, CA 90033">Girls Today Women Tomorrow
+                    <option value="510 S Hewitt St, Los Angeles, CA 90013">Step Up</option>
+                    <option value="1927 E 2nd St, Los Angeles, CA 90033">Girls Today Women Tomorrow
                     </option>
                 </select>
+                <input id="submitDrop" type="button" value="Search">
             </div>
-
-
-            <!-- GOOGLE MAPS map -->
+            
             <div class="col s6 push-s2">
-                <div id="floating-panel googleSearchBar">
-                    <input id="address" type="textbox" value="">
-                </div>
-                <div>
-                    <input id="submit" type="button" value="Search">
-                </div>
+                    <div id="floating-panel">
+                            <!-- <input id="address" type="textbox" value="Los Angeles">
+                            <input id="submit" type="button" value="Search"> -->
+                          </div>
+                         
+                          <div id="map" style="position: relative; overflow: hidden; height: 300px; width: 450px;"></div>
 
-                <div id="map" style="position: relative; overflow: hidden; height: 300px; width: 450px;"></div>
             </div>
-
-            <script>
-                // $("loc-dropdown").change(function () {
-                //     var displayaddress = $("#loc-dropdown option:selected").value();
-                //     console.log(displayaddress);
-                //     // $("#googleSearchBar").val(displayaddress)
-                // })
-
-                // $("select")
-                //     .change(function () {
-                //         var str = "";
-                //         $("select option:selected").each(function () {
-                //             str += $(this).text();
-                //         });
-                //         $("#address").text(str);
-                //     });
-                // .change();
-            </script>
-
-            <!-- Javascript to take dropdown selection and input it into google search -->
-            <!-- <script> -->
-            <!-- // if option 1 selected, enter "2830 S Central Ave, Los Angeles, CA 90011" in #googleSearchBar
-                // if option 3 selected, enter "510 S Hewitt St, Los Angeles, CA 90013" in #googleSearchBar
-                // if option 2 selected, enter "1927 E 2nd St, Los Angeles, CA 90033" in #googleSearchBar
-
-                // $('#loc-dropdown').change(function () {
-                //     //get the selected option's data-id value using jquery `.data()`
-                //     var mapAddress = $(':selected', this).data('id');
-                //     //populate the rate.
-                //     $("#loc-dropdown").val("#googleSearchBar");
-                // }); -->
-
-            <!-- </script> -->
+            
 
         </div>
     </div>
@@ -358,16 +322,15 @@
                 disableWeekends: true
             });
             $(".tooltipped").tooltip();
-
         });
     </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-        // Reveal Animation
         ScrollReveal({ duration: 2000 }).reveal('.header head-photo')
         ScrollReveal({ duration: 3000 }).reveal('.img')
+
         ScrollReveal({ duration: 2000 }).reveal('.nav-wrapper')
         ScrollReveal({ duration: 2000 }).reveal('.missionp')
         ScrollReveal({ duration: 2000 }).reveal('.howp')
@@ -375,18 +338,25 @@
         ScrollReveal({ duration: 2000 }).reveal('.involvedp')
         ScrollReveal({ duration: 2000 }).reveal('.donorp')
         // ScrollReveal({ duration: 2000 }).reveal('.mentorp')
+
+
         ScrollReveal({ duration: 2000 }).reveal('#involved')
         ScrollReveal({ duration: 2000 }).reveal('#contact-us')
+
         ScrollReveal({ duration: 2000 }).reveal('.googleMapsSection')
         ScrollReveal({ duration: 2000 }).reveal('#Donor-tab')
 
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
 
     </script>
 
 </body>
 <script src="JavaScript/map.js"></script>
 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE&callback=initMap">
-    </script>
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE&callback=initMap">
+</script>
 
 </html>
