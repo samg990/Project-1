@@ -1,16 +1,4 @@
 $(document).ready(function() {
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE",
-    authDomain: "projectfamly.firebaseapp.com",
-    databaseURL: "https://projectfamly.firebaseio.com",
-    projectId: "projectfamly",
-    storageBucket: "projectfamly.appspot.com",
-    messagingSenderId: "49552131620",
-    appId: "1:49552131620:web:84d6ea0a4305a5cf"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
 
   // Assign the reference to the database to a variable named 'database'
   // var database = ...
