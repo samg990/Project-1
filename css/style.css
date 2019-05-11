@@ -232,6 +232,7 @@ a:hover {
   color: aliceblue;
   background-image: linear-gradient(-90deg, #18aadb, #bfbe7e);
   height: 300px;
+  padding: 0%;
   /* opacity: ; */
 }
 
@@ -428,4 +429,10 @@ body {
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
   padding-left: 10px;
+}
+
+#quoteAPI{
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  opacity: 0.8;
 }
