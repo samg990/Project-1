@@ -35,7 +35,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -127,9 +127,9 @@
         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
         <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          <button type="button" class="btn btn-danger" onclick="document.getElementById('id01').style.display='none'"
             class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
+          <button type="submit" class="btn btn-secondary">Sign Up</button>
         </div>
       </div>
     </form>
@@ -142,7 +142,7 @@
       <div class="imgcontainer">
         <span onclick="document.getElementById('id02').style.display='none'" class="close"
           title="Close Modal">&times;</span>
-        <img src="" alt="Avatar" class="avatar">
+        
       </div>
 
       <div class="container">
@@ -153,7 +153,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" id="upsw" name="psw" required>
 
-        <button type="submit" id="loginBtn">Login</button>
+       
 
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -162,7 +162,10 @@
 
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id02').style.display='none'"
-          class="cancelbtn">Cancel</button>
+          class="btn btn-danger"">Cancel</button>
+
+          <button type="submit" class="btn btn-secondary" id="loginBtn">Login</button>
+          
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>
