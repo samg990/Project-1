@@ -27,7 +27,7 @@ $(document).ready(function () {
   });
 
   // signup event
-  $('.signupbtn').click(function (e) {
+  $('#signupbtn').click(function (e) {
     e.preventDefault();
     const email = $('#email').val();
     const pass = $('#psw').val();
