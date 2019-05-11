@@ -62,11 +62,7 @@ $(document).ready(function() {
 
     // array that will hold total of donations
     var totalDonArr = [];
-
-    var donInput = $("#donDonAmount").val();
-
-    var numAr = donInput;
-
+    var carttotal = 0;
     //total cart
     var totalCart = 0;
 
@@ -75,36 +71,45 @@ $(document).ready(function() {
       event.preventDefault();
 
       //Add donation amount to Array
+      var donInput = $("#donDonAmount").val();
 
-      totalDonArr.push($("#donDonAmount").val());
+      totalDonArr.push(donInput);
       console.log(totalDonArr);
 
       //   [0, 1, 2, 3, 4].reduce((accumulator, currentValue, currentIndex, array) => {
       //     return accumulator + currentValue;
-
+      for (var i = 0; i < totalDonArr.length; i++) {
+        var cart = parseFloat(totalDonArr[i]);
+      }
+      carttotal = cart + carttotal;
+      cart = 0;
       // function for adding two numbers. Easy!
-      const add = (accumulator, currentValue) => accumulator + currentValue;
+      // const add = (accumulator, currentValue) => accumulator + currentValue;
       // use reduce to sum our array
-      const sum = totalDonArr.reduce(add);
+      // const sum = totalDonArr.reduce(add);
 
       //   console.log(totalCart);
 
-      //   for (var i = 0; i < totalDonArr.length; i++) {
+      //   for (var i = 0; i < totalonArr.length; i++) {
       //     totalCart += totalDonArr[i];
       //   }
 
       //display array REDUCED total in HTML
-      $("#donationTotal").html(sum);
-      console.log(sum);
+      $("#donationTotal").html("$ " + carttotal);
+
+      console.log(carttotal);
+
+      $("#donDonate").modal("hide");
+      return false;
 
       //   //display array REDUCED total in HTML
       //   $("#donationTotal").html(arrSum);
 
       //   //close modal and show donor page
       //   window.location.href = "donerpg.html";
-      $(this).hide();
+      // $("#donDonate").hide();
 
-      //   $("#donDonate").style.display = "none";
+      // $("#donDonate").style.display = "none";
     });
   });
 });

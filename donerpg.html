@@ -19,6 +19,8 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Doner Page CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/donor.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
+   
     <!-- Fonts Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -32,6 +34,31 @@
 </head>
 
 <body>
+
+     <!-- BEgin of Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">FMLY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html#contact-us">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link" href="mentorpg.html">Mentor</a>
+                          </li> -->
+                  </ul>
+                  <div id="quoteAPI"></div>
+                </div>
+              </nav>
+
+               <!-- End of Navbar -->
     <div class="hero-unit_background-image"></div>
 
     <!-- Navbar -->
@@ -48,7 +75,7 @@
 
         <div class="row justify-content-center ">
 
-            <!-- Top Row Filter -->
+            Top Row Filter
             <div class="col-12 " id="filter-dropdown-title"></div>
 
             <div id="filter-dropdowns">
@@ -129,7 +156,7 @@
 
                 <div class="col-sm-2 donation-cart ">
                     <div class="text-center">
-                        <h3>Donation Cart</h3>
+                        <h3></h3>
                     </div>
                     <div class="donation-cart-list" id=donationCartItems>
                         <!-- Javascript. This is where the cart items go -->
@@ -140,7 +167,7 @@
                             $0.00
                             <!-- Javascript. This is where the Cart total diplays -->
                         </p>
-                        <button class="submitDonation" data-toggle="modal" data-target="#donorCCPay">Pay Now</button>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#donorCCPay">Pay Now</button>
 
                     </div>
                 </div>
@@ -201,9 +228,9 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button submit"
-                                                            id="donDONBTN" class="btn btn-success">Submit</button>
+                                                            id="donDONBTN" class="btn btn-success" >Submit</button>
                                                         <button type="button" class="btn btn-secondary"
-                                                            data-dismiss="modal">Cancel</button>
+                                                            data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
