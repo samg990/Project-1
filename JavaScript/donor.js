@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBPTO1NyspDb4daC3OCQkCr8nIEig0HtRE",
@@ -17,29 +17,36 @@ $(document).ready(function() {
   var db = firebase.database();
 
   var projectFB = db.ref();
-  projectFB.on("value", function(snapshot) {
-    snapshot.forEach(function(childSnapshot) {
+  projectFB.on("value", function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
       // document.$("id01").style.display = "none";
       //   console.log(childSnapshot.val());
 
       //   //hold donation amount in a variable in order to compare when donating.
       var donationGOAL = childSnapshot.val().RangeChoice;
+      var classMap = {
+        "Entertainment": 'entertainmentItem',
+        "Education": 'educationItem ',
+        "DIY-Projects": 'diyItem',
+        "Volunteer": 'volunteerItem'
+
+      }
 
       var newCard = `<div class="wrapper actCardWrapper ">
-        <div style="width: 17rem; height: 30rem; margin:3%;" class="card education-act">
+        <div style="width: 17rem; height: 30rem; margin:3%;" class="card education-act ${classMap[childSnapshot.val().ActivitiesChoice]}">
             <img id="actMentor" class="card-img-top" src="images/other/avatar.png"
                 alt="Card image cap" data-toggle="modal" data-target="#mentorBio">
             <div class="card-body">
                 <h4 class="card-goal">GOAL: $${
-                  childSnapshot.val().RangeChoice
-                }</h4>
+        childSnapshot.val().RangeChoice
+        }</h4>
                 <hr>
                 <!-- <h5 class="card-title">Entertainment</h5> -->
                 <p class="card-text">${childSnapshot.val().ProjectName}</p>
                 <hr>
                 <p class="actDescription">${
-                  childSnapshot.val().ProjectDetails
-                }</p>
+        childSnapshot.val().ProjectDetails
+        }</p>
             </div>
             <div class="card-footer">
                 <!-- <a href="#" style="margin:0%" 
@@ -67,7 +74,7 @@ $(document).ready(function() {
     var totalCart = 0;
 
     // on click of the Donate button within the modal trigger additiona to cart and show diplay total
-    $("#donDONBTN").on("click", function(event) {
+    $("#donDONBTN").on("click", function (event) {
       event.preventDefault();
 
       //Add donation amount to Array
