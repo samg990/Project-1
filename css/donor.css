@@ -95,6 +95,25 @@ body {
   text-align: center;
 }
 
+/* Card Borders based on Activity Type */
+.entertainmentItem {
+  border:5px solid red!important;
+}
+
+.educationItem {
+  border:5px solid blue!important;
+}
+
+.diyItem {
+  border:5px solid green!important;
+}
+
+.volunteerItem{
+  border:5px solid yellow!important;
+}
+
+
+
 /* Filter Box */
 /* #filter-box-title { */
 /* font-size: 50px; */
